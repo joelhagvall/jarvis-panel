@@ -1,0 +1,385 @@
+{
+ "departures": [
+  {
+   "destination": "Akalla",
+   "direction_code": 1,
+   "direction": "Akalla",
+   "state": "EXPECTED",
+   "display": "2 min",
+   "scheduled": "2026-10-26T18:34:24",
+   "expected": "2026-10-26T18:34:24",
+   "journey": {
+    "id": 2026102630433,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "3 min",
+   "scheduled": "2026-10-26T18:35:12",
+   "expected": "2026-10-26T18:35:12",
+   "journey": {
+    "id": 2026102630428,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Hjulsta",
+   "direction_code": 1,
+   "direction": "Hjulsta",
+   "state": "EXPECTED",
+   "display": "6 min",
+   "scheduled": "2026-10-26T18:38:12",
+   "expected": "2026-10-26T18:38:12",
+   "journey": {
+    "id": 2026102630435,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "6 min",
+   "scheduled": "2026-10-26T18:38:42",
+   "expected": "2026-10-26T18:38:42",
+   "journey": {
+    "id": 2026102630430,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Akalla",
+   "direction_code": 1,
+   "direction": "Akalla",
+   "state": "EXPECTED",
+   "display": "10 min",
+   "scheduled": "2026-10-26T18:41:54",
+   "expected": "2026-10-26T18:41:54",
+   "journey": {
+    "id": 2026102630437,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "10 min",
+   "scheduled": "2026-10-26T18:42:42",
+   "expected": "2026-10-26T18:42:42",
+   "journey": {
+    "id": 2026102630432,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Hjulsta",
+   "direction_code": 1,
+   "direction": "Hjulsta",
+   "state": "EXPECTED",
+   "display": "13 min",
+   "scheduled": "2026-10-26T18:45:42",
+   "expected": "2026-10-26T18:45:42",
+   "journey": {
+    "id": 2026102630439,
+    "state": "EXPECTED"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "15 min",
+   "scheduled": "2026-10-26T18:46:12",
+   "expected": "2026-10-26T18:47:01",
+   "journey": {
+    "id": 2026102630434,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Akalla",
+   "direction_code": 1,
+   "direction": "Akalla",
+   "state": "EXPECTED",
+   "display": "17 min",
+   "scheduled": "2026-10-26T18:49:24",
+   "expected": "2026-10-26T18:49:24",
+   "journey": {
+    "id": 2026102630440,
+    "state": "EXPECTED"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "18 min",
+   "scheduled": "2026-10-26T18:50:12",
+   "expected": "2026-10-26T18:50:12",
+   "journey": {
+    "id": 2026102630436,
+    "state": "NORMALPROGRESS",
+    "prediction_state": "NORMAL"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 11,
+    "designation": "11",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Hjulsta",
+   "direction_code": 1,
+   "direction": "Hjulsta",
+   "state": "EXPECTED",
+   "display": "21 min",
+   "scheduled": "2026-10-26T18:53:12",
+   "expected": "2026-10-26T18:53:12",
+   "journey": {
+    "id": 2026102630442,
+    "state": "EXPECTED"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "designation": "1"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  },
+  {
+   "destination": "Kungsträdgården",
+   "direction_code": 2,
+   "direction": "Kungsträdgården",
+   "state": "EXPECTED",
+   "display": "21 min",
+   "scheduled": "2026-10-26T18:53:42",
+   "expected": "2026-10-26T18:53:42",
+   "journey": {
+    "id": 2026102630438,
+    "state": "EXPECTED"
+   },
+   "stop_area": {
+    "id": 3161,
+    "name": "Stadshagen",
+    "type": "METROSTN"
+   },
+   "stop_point": {
+    "id": 3162,
+    "name": "Stadshagen",
+    "designation": "2"
+   },
+   "line": {
+    "id": 10,
+    "designation": "10",
+    "transport_authority_id": 1,
+    "transport_mode": "METRO",
+    "group_of_lines": "Tunnelbanans blå linje"
+   },
+   "deviations": []
+  }
+ ],
+ "stop_deviations": []
+}

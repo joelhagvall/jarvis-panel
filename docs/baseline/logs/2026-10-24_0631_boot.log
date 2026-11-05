@@ -1,0 +1,83 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.77 [E][esp32.crash:436]: *** CRASH DETECTED ON PREVIOUS BOOT ***
+   1.77 [E][esp32.crash:441]:   Reason: Task wdt
+   1.77 [E][esp32.crash:443]:   Crashed core: 1
+   1.77 [E][esp32.crash:410]:   Captured by a different firmware build; addresses belong to that build's ELF
+   1.77 [E][esp32.crash:411]:   pc: 0x4FF23036
+   1.77 [E][esp32.crash:404]:   bt0: 0x4FF23036
+   1.77 [E][esp32.crash:404]:   bt1: 0x4FF23024
+   1.77 [E][esp32.crash:404]:   bt2: 0x4FF41000
+   1.77 [E][esp32.crash:404]:   bt3: 0x4FF64738
+   1.77 [E][esp32.crash:404]:   bt4: 0x4FF64738
+   1.77 [E][esp32.crash:404]:   bt5: 0x4FF64C40
+   1.77 [E][esp32.crash:404]:   bt6: 0x4FF33808
+   1.77 [E][esp32.crash:404]:   bt7: 0x4FF645E0
+   1.77 [E][esp32.crash:404]:   bt8: 0x4FF64D3C
+   1.77 [E][esp32.crash:404]:   bt9: 0x4FF33800
+   1.77 [E][esp32.crash:404]:   bt10: 0x4FF64D3C
+   1.77 [E][esp32.crash:404]:   bt11: 0x4FF64738
+   1.77 [E][esp32.crash:404]:   bt12: 0x4FF64D30
+   1.77 [E][esp32.crash:404]:   bt13: 0x4FF42670
+   1.77 [E][esp32.crash:404]:   bt14: 0x4FF426D8
+   1.77 [E][esp32.crash:404]:   bt15: 0x4FF42740
+   1.87 [I][app:060]: Running through setup()
+   2.20 [I][esp-idf:000]: E (417) H_API: ESP-Hosted link not yet up
+   5.07 [W][component:290]: api set Warning flag: waiting for client connection
+   5.12 [I][direct_display:093]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   5.12 [I][bench:059]: Measuring LVGL rendering
+   5.12 [I][app:117]: setup() finished successfully!
+   5.12 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   5.12 [W][component:290]: wifi set Warning flag: associating to network
+   5.23 [W][component:419]: lvgl took a long time for an operation (74 ms), max is 50 ms
+   5.23 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 06:29:30 +0200
+   5.23 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.28 [W][component:313]: sound_level.sensor cleared Warning flag
+   5.65 [I][direct_display:096]: submit count 1 avg 0.15 ms max 0.15 ms
+   5.71 [W][safe_mode:085]: Last reset too quick; invoke in 8 restarts
+   9.32 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.42 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+   9.42 [W][component:313]: wifi cleared Warning flag
+   9.58 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  10.27 [W][component:313]: api cleared Warning flag
+  12.46 [I][main:1847]: Ready sound
+  12.51 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+  12.78 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  15.68 [I][direct_display:096]: submit count 16 avg 0.15 ms max 0.23 ms
+  17.07 [I][orb_atlas:045]: Background RGB565 atlas ready in 1313 ms
+  17.83 [I][orb_atlas:067]: Installed 143 frames without copying pixels
+  25.67 [I][direct_display:096]: submit count 2 avg 0.20 ms max 0.20 ms
+  35.69 [I][direct_display:096]: submit count 1 avg 0.19 ms max 0.19 ms
+  45.70 [I][direct_display:096]: submit count 1 avg 0.30 ms max 0.30 ms
+  55.67 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+  61.83 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  65.65 [I][direct_display:096]: submit count 1 avg 0.21 ms max 0.21 ms
+  75.67 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+  81.04 [E][esp32.crash:436]: *** CRASH DETECTED ON PREVIOUS BOOT ***
+  81.04 [E][esp32.crash:441]:   Reason: Task wdt
+  81.04 [E][esp32.crash:443]:   Crashed core: 1
+  81.04 [E][esp32.crash:410]:   Captured by a different firmware build; addresses belong to that build's ELF
+  81.04 [E][esp32.crash:411]:   pc: 0x4FF23036
+  81.04 [E][esp32.crash:404]:   bt0: 0x4FF23036
+  81.04 [E][esp32.crash:404]:   bt1: 0x4FF23024
+  81.04 [E][esp32.crash:404]:   bt2: 0x4FF41000
+  81.04 [E][esp32.crash:404]:   bt3: 0x4FF64738
+  81.04 [E][esp32.crash:404]:   bt4: 0x4FF64738
+  81.04 [E][esp32.crash:404]:   bt5: 0x4FF64C40
+  81.04 [E][esp32.crash:404]:   bt6: 0x4FF33808
+  81.04 [E][esp32.crash:404]:   bt7: 0x4FF645E0
+  81.04 [E][esp32.crash:404]:   bt8: 0x4FF64D3C
+  81.04 [E][esp32.crash:404]:   bt9: 0x4FF33800
+  81.04 [E][esp32.crash:404]:   bt10: 0x4FF64D3C
+  81.04 [E][esp32.crash:404]:   bt11: 0x4FF64738
+  81.04 [E][esp32.crash:404]:   bt12: 0x4FF64D30
+  81.04 [E][esp32.crash:404]:   bt13: 0x4FF42670
+  81.04 [E][esp32.crash:404]:   bt14: 0x4FF426D8
+  81.04 [E][esp32.crash:404]:   bt15: 0x4FF42740
+  81.04 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 06:29:30 +0200
+  81.04 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  81.53 [W][safe_mode:085]: Last reset too quick; invoke in 8 restarts
+  83.09 [I][bench:2398]: Performance test started
+  85.09 [I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+  85.68 [I][direct_display:096]: submit count 2 avg 0.21 ms max 0.23 ms
+  87.13 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.5 ms, max 61.5 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+  89.12 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.3 ms, max 46.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB

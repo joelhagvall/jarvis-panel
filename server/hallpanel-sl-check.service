@@ -1,0 +1,15 @@
+# The metro card's and the panel's health every 5 minutes (server/check_sl.py --notify, server/panel_health.py):
+# a push to Joel's phone only when an alert appears or clears, or once per crash; never at night. Installed and enabled by tools/deploy_jarvis.sh.
+[Unit]
+Description=Hallway panel: SL card and panel health alerts
+After=hallpanel.service
+
+[Service]
+Type=oneshot
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStart=%h/hallpanel-live/venv/bin/python3 %h/hallpanel-live/server/check_sl.py --notify
+# Exit 1 is a reported problem, not a broken check.
+SuccessExitStatus=1
+StandardOutput=null

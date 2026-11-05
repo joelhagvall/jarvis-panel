@@ -1,0 +1,10 @@
+# Every three hours: EPIC publishes a day or two late at varying times; earth.py asks NeoWs once per day.
+[Unit]
+Description=Hallway panel: fetch NASA's Earth picture and asteroids
+
+[Timer]
+OnCalendar=*-*-* 00/3:35:00 Europe/Stockholm
+Persistent=true
+
+[Install]
+WantedBy=timers.target

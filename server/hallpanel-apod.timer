@@ -1,0 +1,13 @@
+# First attempt 00:10 New York, then every 15 minutes. apod.py --scheduled
+# stops API requests once today's image/video is handled and caps failed daily attempts.
+# New York owns the date and DST. A published background reaches the panel via bg_version.
+[Unit]
+Description=Hallway panel: fetch NASA's picture of the day
+
+[Timer]
+OnCalendar=*-*-* *:10,25,40,55:00 America/New_York
+AccuracySec=1s
+Persistent=true
+
+[Install]
+WantedBy=timers.target

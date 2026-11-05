@@ -1,0 +1,16 @@
+[package]
+name = "hallpanel-image-sampling"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[lints.clippy]
+unwrap_used = "warn"
+undocumented_unsafe_blocks = "warn"
+
+[profile.release]
+strip = true

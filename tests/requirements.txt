@@ -1,0 +1,10 @@
+# Free checks only; excludes Piper's runtime and model weights.
+# ESPHome is already installed for the panel build.
+anthropic==2.0.0
+sgp4==2.27
+numpy==2.5.4
+pillow==13.0.0
+aiohttp>=3.11,<4
+lz4==4.4.5
+# Lets agents run unittest files with pytest too (pytest tests/test_x.py).
+pytest==9.1.1

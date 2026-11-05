@@ -1,0 +1,255 @@
+# Jarvis väckning (docs/wakeups.md): one row per weekday, its time and content shown while the day is on.
+title: Jarvis väckning
+views:
+  - title: Väckning
+    path: vackning
+    icon: mdi:alarm
+    cards:
+      - type: markdown
+        content: |
+          {% set s = 'sensor.jarvis_nasta_vackning' %}{% set line = state_attr(s, 'text') %}{% set status = state_attr(s, 'status') or 'Jarvis svarar inte just nu' %}
+          {% if line %}
+          ## ⏰ {{ line }}
+          {{ status }}
+          {% else %}
+          <ha-alert alert-type="warning"><b>{{ status }}.</b> Slå på en dag under Veckan eller lägg till en extra väckning.</ha-alert>
+          {% endif %}
+      - type: conditional
+        conditions:
+          - condition: state
+            entity: binary_sensor.jarvis_vackning_pagar
+            state: "on"
+        card:
+          type: horizontal-stack
+          cards:
+            - type: button
+              name: Snooze 5 min
+              icon: mdi:alarm-snooze
+              tap_action:
+                action: perform-action
+                perform_action: jarvis_agent.wakeup_snooze
+            - type: button
+              name: Stopp
+              icon: mdi:stop-circle-outline
+              tap_action:
+                action: perform-action
+                perform_action: jarvis_agent.wakeup_stop
+      - type: entities
+        title: Veckan
+        show_header_toggle: false
+        state_color: true
+        entities:
+          - entity: input_boolean.jarvis_vackning_mandag
+            name: Måndag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_mandag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_mandag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_mandag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_mandag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_tisdag
+            name: Tisdag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_tisdag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_tisdag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_tisdag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_tisdag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_onsdag
+            name: Onsdag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_onsdag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_onsdag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_onsdag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_onsdag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_torsdag
+            name: Torsdag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_torsdag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_torsdag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_torsdag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_torsdag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_fredag
+            name: Fredag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_fredag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_fredag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_fredag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_fredag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_lordag
+            name: Lördag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_lordag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_lordag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_lordag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_lordag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: divider
+          - entity: input_boolean.jarvis_vackning_sondag
+            name: Söndag
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_sondag
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_sondag_tid
+              name: Tid
+              icon: mdi:clock-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_sondag
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_sondag_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+      - type: entities
+        title: Bara en gång
+        show_header_toggle: false
+        entities:
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_engang
+                state: "on"
+            row:
+              entity: input_datetime.jarvis_vackning_engang
+              name: När
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_engang
+                state: "on"
+            row:
+              entity: input_select.jarvis_vackning_engang_typ
+              name: Innehåll
+              icon: mdi:text-box-outline
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_engang
+                state: "on"
+              - entity: input_select.jarvis_vackning_engang_typ
+                state: Egen väckning
+            row:
+              entity: input_text.jarvis_vackning_engang_text
+              name: Vad ska Jarvis säga?
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_engang
+                state: "on"
+            row:
+              type: button
+              name: Extra väckningen
+              icon: mdi:alarm-off
+              action_name: Ta bort
+              tap_action:
+                action: perform-action
+                perform_action: input_boolean.turn_off
+                target:
+                  entity_id: input_boolean.jarvis_vackning_engang
+          - type: conditional
+            conditions:
+              - entity: input_boolean.jarvis_vackning_engang
+                state_not: "on"
+            row:
+              type: button
+              name: Ingen extra väckning
+              icon: mdi:alarm-plus
+              action_name: Lägg till
+              tap_action:
+                action: perform-action
+                perform_action: script.jarvis_vackning_lagg_till_extra
+      - type: entities
+        title: Ljud
+        show_header_toggle: false
+        entities:
+          - entity: input_number.jarvis_vackning_volym
+            name: Volym
+          - entity: input_select.jarvis_vackning_radio
+            name: Radio efter väckningen
+          - type: button
+            name: Provlyssna nästa väckning
+            icon: mdi:play-circle-outline
+            action_name: Spela
+            tap_action:
+              action: perform-action
+              perform_action: jarvis_agent.wakeup_preview
+      - type: markdown
+        content: >-
+          **Innehåll:** *Vanlig morgon* ger väder och kalender. *Kontorsmorgon* lägger till lugn pepp
+          inför Demoorten.
+
+
+          En dag som är på väcker dig på sin egen tid. En **extra väckning** gäller en gång, går före veckan
+          samma minut och stängs av när den är klar. *Lägg till* sätter den till imorgon 07:00; ändra sedan tiden här.
+
+
+          **Snooze** och **Stopp** syns under en väckning och 30 minuter efter. *Provlyssna* spelar en kort
+          hälsning med nästa väcknings innehåll och vald volym. Radion startar när hälsningen är klar, på JBL:en
+          om den är på, annars på panelen.

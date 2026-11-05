@@ -1,0 +1,36 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.65 [I][app:060]: Running through setup()
+   1.97 [I][esp-idf:000]: E (403) H_API: ESP-Hosted link not yet up
+   4.91 [W][component:290]: api set Warning flag: waiting for client connection
+   4.91 [I][direct_display:109]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   4.91 [I][bench:059]: Measuring LVGL rendering
+   4.96 [I][app:117]: setup() finished successfully!
+   4.96 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.96 [W][component:290]: wifi set Warning flag: associating to network
+   5.01 [W][component:419]: lvgl took a long time for an operation (69 ms), max is 50 ms
+   5.01 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 07:44:56 +0200
+   5.01 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.07 [W][component:313]: sound_level.sensor cleared Warning flag
+   5.80 [I][direct_display:112]: submit count 1 avg 0.13 ms max 0.13 ms
+   9.17 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.28 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 50 ms
+   9.28 [W][component:313]: wifi cleared Warning flag
+   9.44 [W][component:419]: online_image.image took a long time for an operation (87 ms), max is 70 ms
+   9.49 [W][component:313]: api cleared Warning flag
+  12.13 [W][component:419]: online_image.image took a long time for an operation (61 ms), max is 50 ms
+  12.35 [W][component:419]: online_image.image took a long time for an operation (85 ms), max is 70 ms
+  15.52 [W][component:419]: online_image.image took a long time for an operation (189 ms), max is 50 ms
+  15.84 [I][direct_display:112]: submit count 17 avg 0.13 ms max 0.23 ms
+  17.36 [W][component:419]: online_image.image took a long time for an operation (204 ms), max is 190 ms
+  17.62 [W][component:419]: online_image.image took a long time for an operation (252 ms), max is 210 ms
+  19.51 [I][packed_orb:065]: Loaded 143 compressed frames in 1574 ms; retained 4305012 bytes
+  19.51 [I][packed_orb:042]: Installed 143 lossless LZ4 frames; decoded image cache disabled
+  19.51 [I][main:1892]: Ready sound
+  25.84 [I][direct_display:112]: submit count 2 avg 0.17 ms max 0.19 ms
+  35.86 [I][direct_display:112]: submit count 0 avg 0.00 ms max 0.00 ms
+  45.83 [I][direct_display:112]: submit count 1 avg 0.19 ms max 0.19 ms
+  55.85 [I][direct_display:112]: submit count 1 avg 0.14 ms max 0.14 ms
+  61.60 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  65.82 [I][direct_display:112]: submit count 0 avg 0.00 ms max 0.00 ms
+  75.83 [I][direct_display:112]: submit count 2 avg 0.19 ms max 0.21 ms
+  85.83 [I][direct_display:112]: submit count 1 avg 0.15 ms max 0.15 ms

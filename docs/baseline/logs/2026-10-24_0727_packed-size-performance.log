@@ -1,0 +1,58 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+[07:26:48.111][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:26:48.525][I][bench:2427]: Performance test started
+[07:26:50.526][I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:26:52.531][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.3 ms, max 61.3 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:26:54.618][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.7 ms, max 44.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:26:56.541][I][bench:067]: page_natt | redraws/s 0.5 | render avg 22.0 ms, max 22.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:26:58.124][I][direct_display:096]: submit count 41 avg 0.13 ms max 0.24 ms
+[07:26:58.590][I][bench:067]: page_orb | redraws/s 24.0 | render avg 17.7 ms, max 57.2 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:00.639][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 66.7 ms, max 66.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:02.545][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.5 ms, max 61.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:04.632][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.2 ms, max 44.2 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:06.550][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.3 ms, max 21.3 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:08.136][I][direct_display:096]: submit count 52 avg 0.14 ms max 0.46 ms
+[07:27:08.568][I][bench:067]: page_orb | redraws/s 24.3 | render avg 17.9 ms, max 57.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:10.573][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.6 ms, max 65.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:12.574][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 62.5 ms, max 62.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:14.577][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 50.0 ms, max 50.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:16.579][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.6 ms, max 21.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:18.139][I][direct_display:096]: submit count 52 avg 0.13 ms max 0.24 ms
+[07:27:18.581][I][bench:067]: page_orb | redraws/s 24.0 | render avg 17.9 ms, max 55.4 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:18.584][I][bench:2897]: Performance test finished
+[07:27:28.139][I][direct_display:096]: submit count 13 avg 0.14 ms max 0.24 ms
+[07:27:38.140][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:27:48.140][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:27:54.605][I][bench:2427]: Performance test started
+[07:27:56.606][I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:27:58.143][I][direct_display:096]: submit count 1 avg 0.24 ms max 0.24 ms
+[07:27:58.704][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.1 ms, max 61.1 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:00.650][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.4 ms, max 44.4 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:02.699][I][bench:067]: page_natt | redraws/s 1.0 | render avg 14.4 ms, max 21.4 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:04.662][I][bench:067]: page_orb | redraws/s 24.5 | render avg 17.9 ms, max 55.8 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:06.669][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.4 ms, max 65.4 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:08.230][I][direct_display:096]: submit count 54 avg 0.13 ms max 0.44 ms
+[07:28:08.740][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.7 ms, max 61.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:10.670][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.5 ms, max 44.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:12.670][I][bench:067]: page_natt | redraws/s 0.5 | render avg 22.3 ms, max 22.3 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:14.672][I][bench:067]: page_orb | redraws/s 24.5 | render avg 17.8 ms, max 56.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:16.674][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 63.6 ms, max 63.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:18.160][I][direct_display:096]: submit count 53 avg 0.13 ms max 0.33 ms
+[07:28:18.775][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 63.0 ms, max 63.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:20.720][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 47.8 ms, max 47.8 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:22.680][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.7 ms, max 21.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:24.682][I][bench:067]: page_orb | redraws/s 24.0 | render avg 17.9 ms, max 55.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+[07:28:24.685][I][bench:2897]: Performance test finished
+[07:28:28.197][I][direct_display:096]: submit count 52 avg 0.13 ms max 0.27 ms
+[07:28:38.231][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:28:48.143][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:28:58.199][I][direct_display:096]: submit count 1 avg 0.24 ms max 0.24 ms
+[07:29:08.143][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[07:29:18.167][I][direct_display:096]: submit count 1 avg 0.12 ms max 0.12 ms
+[07:29:28.203][I][direct_display:096]: submit count 1 avg 0.26 ms max 0.26 ms
+[07:29:38.144][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:29:48.144][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[07:29:58.206][I][direct_display:096]: submit count 1 avg 0.23 ms max 0.23 ms
+[07:30:08.145][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[07:30:18.146][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[07:30:28.155][I][direct_display:096]: submit count 1 avg 0.25 ms max 0.25 ms

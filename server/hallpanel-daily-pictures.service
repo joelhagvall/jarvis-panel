@@ -1,0 +1,13 @@
+# A new background every day from free APIs: Dagens målning, Dagens foto, Bing and NASA Jordbild (server/daily_pictures.py).
+# Run by hallpanel-daily-pictures.timer, and once by tools/deploy_jarvis.sh.
+# Log: journalctl --user-unit hallpanel-daily-pictures
+[Unit]
+Description=Hallway panel: today's painting, Wikimedia photo, Bing photo and Earth Observatory picture as background choices
+After=network-online.target
+
+[Service]
+Type=oneshot
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStart=%h/hallpanel-live/venv/bin/python3 %h/hallpanel-live/server/daily_pictures.py

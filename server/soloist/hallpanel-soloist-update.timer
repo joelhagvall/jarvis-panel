@@ -1,0 +1,10 @@
+[Unit]
+Description=Fetch Spotify Soloist's current build daily (builds expire after 90 days)
+
+[Timer]
+OnCalendar=*-*-* 04:20
+RandomizedDelaySec=30min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

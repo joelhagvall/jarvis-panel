@@ -1,0 +1,24 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+[06:26:05.237][I][bench:2398]: Performance test started
+[06:26:05.667][I][direct_display:096]: submit count 2 avg 0.20 ms max 0.21 ms
+[06:26:07.238][I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:09.247][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.3 ms, max 61.3 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:11.243][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.7 ms, max 44.7 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:13.247][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.8 ms, max 21.8 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:15.246][I][bench:067]: page_orb | redraws/s 25.0 | render avg 8.3 ms, max 45.8 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:15.667][I][direct_display:096]: submit count 54 avg 0.15 ms max 0.46 ms
+[06:26:17.339][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 67.5 ms, max 67.5 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:19.250][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.7 ms, max 61.7 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:21.332][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.9 ms, max 44.9 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:23.259][I][bench:067]: page_natt | redraws/s 0.5 | render avg 22.0 ms, max 22.0 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:25.254][I][bench:067]: page_orb | redraws/s 25.0 | render avg 8.3 ms, max 45.5 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:25.734][I][direct_display:096]: submit count 54 avg 0.14 ms max 0.24 ms
+[06:26:27.270][I][bench:067]: page_glass_v2 | redraws/s 1.0 | render avg 36.9 ms, max 67.4 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:29.258][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.0 ms, max 61.0 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:31.263][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.4 ms, max 46.4 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:33.263][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.6 ms, max 21.6 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:35.265][I][bench:067]: page_orb | redraws/s 25.0 | render avg 8.3 ms, max 48.4 ms | PSRAM free 10570 kB (lowest 10560 kB) | internal free 174 kB
+[06:26:35.265][I][bench:2868]: Performance test finished
+[06:26:35.667][I][direct_display:096]: submit count 55 avg 0.15 ms max 0.47 ms
+[06:26:45.670][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:26:55.669][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms

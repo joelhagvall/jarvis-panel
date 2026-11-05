@@ -1,0 +1,1563 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.48 [I][app:060]: Running through setup()
+   1.76 [D][lvgl:773]: Setting resolution to 1024 x 600 (rotation 0)
+   1.82 [D][esp-idf:000]: E (421) H_API: ESP-Hosted link not yet up
+   4.71 [W][component:290]: api set Warning flag: waiting for client connection
+   4.71 [I][app:117]: setup() finished successfully!
+   4.71 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.71 [W][component:290]: wifi set Warning flag: associating to network
+   4.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   4.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   4.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   4.82 [W][component:419]: lvgl took a long time for an operation (83 ms), max is 50 ms
+   4.82 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 19:36:56 +0200
+   4.82 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   4.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+   4.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   4.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   4.87 [D][ring_buffer:035]: Created ring buffer with size 3840
+   4.87 [W][component:313]: sound_level.sensor cleared Warning flag
+   4.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   4.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+   4.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   4.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   4.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   4.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   4.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+   4.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   5.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   5.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+   5.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   5.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   5.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   5.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+   5.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   5.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   5.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   5.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   5.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+   5.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   5.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   5.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   5.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+   5.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   5.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   5.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   5.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   5.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   5.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   5.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   5.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   5.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3abc4
+   5.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+   5.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   5.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   5.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+   5.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   5.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   5.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   5.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+   5.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   5.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   5.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   5.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   5.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   5.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+   5.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   5.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   5.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+   5.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   5.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   5.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   5.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   5.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+   5.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   5.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   5.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   5.97 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+   5.97 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   6.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   6.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   6.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+   6.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   6.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   6.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   6.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+   6.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+   6.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   6.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   6.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+   6.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   6.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   6.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   6.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+   6.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   6.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+   6.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   6.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   6.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+   6.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   6.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   6.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   6.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+   6.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   6.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   6.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   6.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+   6.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   6.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   6.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   6.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   6.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+   6.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   6.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   6.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   6.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   6.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+   6.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   6.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   6.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   6.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+   6.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   6.86 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   6.86 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   6.86 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+   6.86 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   6.91 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   6.91 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   6.97 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+   6.97 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   7.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   7.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   7.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+   7.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   7.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   7.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   7.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   7.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+   7.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   7.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+   7.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   7.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+   7.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   7.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   7.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   7.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+   7.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   7.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   7.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   7.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   7.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   7.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   7.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   7.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   7.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   7.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   7.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3abc4
+   7.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   7.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   7.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   7.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+   7.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   7.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   7.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+   7.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   7.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   7.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   7.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+   7.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   7.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   7.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   7.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   7.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+   7.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   7.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   7.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   7.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+   7.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   7.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   7.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+   7.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   7.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   8.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   8.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+   8.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+   8.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   8.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   8.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   8.14 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+   8.14 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   8.20 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   8.20 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   8.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+   8.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   8.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   8.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   8.30 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   8.30 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+   8.30 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+   8.30 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   8.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   8.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+   8.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   8.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   8.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   8.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+   8.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+   8.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   8.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+   8.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+   8.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+   8.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   8.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+   8.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   8.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+   8.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   8.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+   8.90 [W][component:419]: wifi took a long time for an operation (199 ms), max is 50 ms
+   8.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+   8.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   8.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   8.95 [D][runtime_image:326]: Allocating buffer: 1024x600, 1228800 bytes
+   9.01 [W][component:313]: wifi cleared Warning flag
+   9.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+   9.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   9.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+   9.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+   9.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   9.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   9.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   9.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+   9.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   9.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+   9.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   9.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   9.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   9.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   9.35 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+   9.35 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+   9.35 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+   9.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   9.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+   9.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+   9.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+   9.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+   9.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+   9.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+   9.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+   9.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+   9.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+   9.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+   9.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+   9.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+   9.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+   9.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+   9.84 [W][component:313]: api cleared Warning flag
+   9.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+   9.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+   9.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+   9.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+   9.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+   9.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+   9.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+   9.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  10.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  10.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  10.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  10.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  10.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  10.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  10.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  10.23 [W][component:419]: online_image.image took a long time for an operation (51 ms), max is 50 ms
+  10.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  10.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  10.23 [D][ring_buffer:035][mww]: Created ring buffer with size 3840
+  10.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  10.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  10.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  10.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  10.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  10.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  10.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  10.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  10.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  10.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  10.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  10.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  10.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  10.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  10.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  10.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  10.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  10.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  10.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  10.83 [W][component:419]: online_image.image took a long time for an operation (98 ms), max is 60 ms
+  10.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  10.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  10.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  10.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  10.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  10.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  11.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  11.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  11.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  11.17 [W][component:419]: online_image.image took a long time for an operation (101 ms), max is 100 ms
+  11.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  11.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  11.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  11.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  11.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  11.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  11.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  11.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  11.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  11.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  11.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  11.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  11.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  11.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  11.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  11.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  11.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  11.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  11.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  11.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  11.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  11.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  11.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  11.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  11.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  11.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  11.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  11.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  11.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  11.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  12.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  12.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  12.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  12.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  12.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  12.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  12.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  12.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  12.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  12.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  12.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  12.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  12.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  12.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  12.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  12.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  12.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  12.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  12.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  12.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  12.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  12.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  12.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  12.55 [D][runtime_image:243]: Decoding complete: 1024x600, 434559 bytes
+  12.61 [D][runtime_image:326]: Allocating buffer: 1024x600, 1228800 bytes
+  12.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  12.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  12.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  12.78 [W][component:419]: lvgl took a long time for an operation (120 ms), max is 90 ms
+  12.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  12.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  12.90 [W][component:419]: online_image.image took a long time for an operation (51 ms), max is 50 ms
+  12.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  12.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  13.00 [W][component:419]: online_image.image took a long time for an operation (96 ms), max is 60 ms
+  13.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  13.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  13.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  13.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  13.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  13.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  13.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  13.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  13.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  13.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  13.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  13.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  13.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  13.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  13.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  13.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  13.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  13.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  13.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  13.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  13.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  13.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  13.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  13.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  13.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  13.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  13.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  13.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  13.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  13.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  13.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  13.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  13.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  13.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  13.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  13.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  13.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  14.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  14.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  14.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  14.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  14.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  14.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  14.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  14.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  14.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  14.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  14.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  14.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  14.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  14.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  14.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  14.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  14.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  14.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  14.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  14.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  14.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  14.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  14.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  14.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  14.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  14.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  14.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  14.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  14.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  14.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  14.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  14.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  14.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  14.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  14.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  14.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  15.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  15.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  15.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  15.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  15.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  15.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  15.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  15.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  15.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  15.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  15.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  15.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  15.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  15.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  15.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  15.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  15.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  15.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  15.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  15.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  15.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  15.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  15.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  15.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  15.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  15.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  15.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  15.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  15.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  15.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  15.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  15.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  15.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  15.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  15.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  15.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  16.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  16.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  16.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  16.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  16.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  16.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  16.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  16.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  16.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  16.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  16.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  16.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  16.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  16.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  16.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  16.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  16.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  16.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  16.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  16.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  16.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  16.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  16.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  16.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  16.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  16.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  16.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  16.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  16.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  16.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  16.79 [D][runtime_image:243]: Decoding complete: 1024x600, 492727 bytes
+  16.85 [D][runtime_image:326]: Allocating buffer: 1024x600, 1228800 bytes
+  16.96 [W][component:419]: online_image.image took a long time for an operation (127 ms), max is 50 ms
+  16.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  16.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  16.96 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  17.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  17.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  17.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  17.25 [W][component:419]: online_image.image took a long time for an operation (146 ms), max is 130 ms
+  17.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  17.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  17.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  17.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  17.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  17.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  17.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  17.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  17.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  17.76 [W][component:419]: online_image.image took a long time for an operation (187 ms), max is 150 ms
+  17.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  17.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  17.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  17.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  17.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  17.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  18.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  18.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  18.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  18.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  18.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  18.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  18.48 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  18.48 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  18.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  18.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  18.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  18.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  18.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  18.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  18.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  18.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  18.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  18.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  19.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  19.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  19.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  19.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  19.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  19.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  19.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  19.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  19.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  19.66 [W][component:419]: online_image.image took a long time for an operation (191 ms), max is 190 ms
+  19.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  19.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  19.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  19.88 [W][component:419]: online_image.image took a long time for an operation (201 ms), max is 200 ms
+  19.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  19.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  19.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  19.93 [D][runtime_image:243]: Decoding complete: 1024x600, 147158 bytes
+  19.93 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  19.99 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  19.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  19.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  20.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  20.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  20.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  20.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  20.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  20.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  20.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  20.26 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  20.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  20.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  20.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  20.27 [D][runtime_image:243]: Decoding complete: 220x220, 35749 bytes
+  20.27 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  20.37 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  20.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  20.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  20.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  20.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  20.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  20.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  20.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  20.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  20.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  20.59 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  20.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  20.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  20.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  20.65 [D][runtime_image:243]: Decoding complete: 220x220, 36178 bytes
+  20.65 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  20.70 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  20.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  20.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  20.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  20.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  20.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  20.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  20.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  20.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  20.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  20.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  20.99 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  20.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  20.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  20.99 [D][runtime_image:243]: Decoding complete: 220x220, 36159 bytes
+  21.05 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  21.10 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  21.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  21.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  21.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  21.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  21.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  21.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  21.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  21.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  21.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  21.38 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  21.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  21.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  21.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  21.38 [D][runtime_image:243]: Decoding complete: 220x220, 37228 bytes
+  21.43 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  21.50 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  21.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  21.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  21.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  21.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  21.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  21.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  21.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  21.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  21.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  21.71 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  21.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  21.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  21.71 [D][runtime_image:243]: Decoding complete: 220x220, 37804 bytes
+  21.76 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  21.81 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  21.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  21.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  21.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  21.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  21.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  21.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  21.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  21.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  21.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  21.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  22.10 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  22.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  22.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  22.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  22.10 [D][runtime_image:243]: Decoding complete: 220x220, 37406 bytes
+  22.10 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  22.15 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  22.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  22.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  22.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  22.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  22.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  22.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  22.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  22.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  22.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  22.43 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  22.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  22.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  22.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  22.43 [D][runtime_image:243]: Decoding complete: 220x220, 37800 bytes
+  22.49 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  22.55 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  22.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  22.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  22.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  22.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  22.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  22.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  22.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  22.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  22.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  22.77 [W][component:419]: online_image.image took a long time for an operation (72 ms), max is 60 ms
+  22.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  22.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  22.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  22.82 [D][runtime_image:243]: Decoding complete: 220x220, 37920 bytes
+  22.82 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  22.87 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  22.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  22.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  22.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  22.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  22.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  22.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  22.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  23.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  23.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  23.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  23.15 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  23.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  23.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  23.15 [D][runtime_image:243]: Decoding complete: 220x220, 37068 bytes
+  23.15 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  23.20 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  23.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  23.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  23.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  23.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  23.26 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  23.31 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  23.31 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  23.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  23.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  23.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  23.47 [W][component:419]: online_image.image took a long time for an operation (71 ms), max is 60 ms
+  23.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  23.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  23.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  23.53 [D][runtime_image:243]: Decoding complete: 220x220, 37033 bytes
+  23.53 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  23.59 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  23.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  23.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  23.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  23.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  23.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  23.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  23.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  23.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  23.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  23.87 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  23.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  23.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  23.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  23.87 [D][runtime_image:243]: Decoding complete: 220x220, 37041 bytes
+  23.87 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  23.92 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  23.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  23.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  23.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  24.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  24.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  24.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  24.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  24.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  24.19 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  24.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  24.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  24.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  24.25 [D][runtime_image:243]: Decoding complete: 220x220, 36952 bytes
+  24.25 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  24.31 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  24.31 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  24.31 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  24.31 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  24.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  24.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  24.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  24.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  24.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  24.48 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  24.48 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  24.53 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  24.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  24.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  24.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  24.58 [D][runtime_image:243]: Decoding complete: 220x220, 36061 bytes
+  24.58 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  24.64 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  24.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  24.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  24.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  24.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  24.75 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  24.75 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  24.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  24.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  24.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  24.92 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  24.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  24.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  24.92 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  24.92 [D][runtime_image:243]: Decoding complete: 220x220, 36765 bytes
+  24.92 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  25.02 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  25.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  25.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  25.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  25.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  25.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  25.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  25.08 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  25.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  25.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  25.24 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  25.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  25.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  25.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  25.29 [D][runtime_image:243]: Decoding complete: 220x220, 36246 bytes
+  25.34 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  25.40 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  25.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  25.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  25.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  25.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  25.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  25.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  25.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  25.51 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  25.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3abc4
+  25.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  25.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  25.62 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  25.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  25.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  25.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  25.68 [D][runtime_image:243]: Decoding complete: 220x220, 35825 bytes
+  25.68 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  25.73 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  25.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  25.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  25.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  25.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  25.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  25.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  25.91 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  25.91 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  25.91 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  26.02 [W][component:419]: online_image.image took a long time for an operation (71 ms), max is 60 ms
+  26.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  26.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  26.02 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  26.02 [D][runtime_image:243]: Decoding complete: 220x220, 37242 bytes
+  26.02 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  26.07 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  26.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  26.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  26.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  26.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  26.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  26.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  26.19 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  26.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  26.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  26.36 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  26.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  26.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  26.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  26.36 [D][runtime_image:243]: Decoding complete: 220x220, 36114 bytes
+  26.41 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  26.46 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  26.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  26.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  26.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  26.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  26.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  26.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  26.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  26.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  26.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  26.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  26.68 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  26.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  26.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  26.73 [D][runtime_image:243]: Decoding complete: 220x220, 36350 bytes
+  26.74 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  26.79 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  26.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  26.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  26.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  26.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  26.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  26.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  26.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  26.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  26.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  26.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  27.06 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  27.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  27.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  27.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  27.07 [D][runtime_image:243]: Decoding complete: 220x220, 37257 bytes
+  27.12 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  27.17 [W][component:419]: online_image.image took a long time for an operation (57 ms), max is 50 ms
+  27.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  27.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  27.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  27.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  27.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  27.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  27.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  27.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  27.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  27.40 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  27.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  27.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  27.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  27.45 [D][runtime_image:243]: Decoding complete: 220x220, 36205 bytes
+  27.51 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  27.57 [W][component:419]: online_image.image took a long time for an operation (57 ms), max is 50 ms
+  27.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  27.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  27.57 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  27.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  27.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  27.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  27.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  27.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  27.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  27.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  27.78 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  27.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  27.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  27.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  27.84 [D][runtime_image:243]: Decoding complete: 220x220, 35499 bytes
+  27.89 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  27.95 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  27.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  27.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  27.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  28.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  28.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  28.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  28.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  28.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  28.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  28.17 [W][component:419]: online_image.image took a long time for an operation (71 ms), max is 60 ms
+  28.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  28.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  28.18 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  28.23 [D][runtime_image:243]: Decoding complete: 220x220, 36860 bytes
+  28.23 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  28.29 [W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+  28.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  28.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  28.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  28.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  28.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  28.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  28.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  28.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  28.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  28.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  28.54 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  28.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  28.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  28.54 [D][runtime_image:243]: Decoding complete: 220x220, 35238 bytes
+  28.60 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  28.65 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  28.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  28.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  28.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  28.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  28.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  28.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  28.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  28.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  28.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  28.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  28.88 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  28.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  28.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  28.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  28.93 [D][runtime_image:243]: Decoding complete: 220x220, 36030 bytes
+  28.93 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  28.98 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  28.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  28.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  28.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  29.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  29.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  29.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  29.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  29.14 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  29.14 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  29.25 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  29.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  29.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  29.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  29.25 [D][runtime_image:243]: Decoding complete: 220x220, 35938 bytes
+  29.31 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  29.36 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  29.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  29.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  29.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  29.36 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  29.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  29.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  29.47 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  29.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  29.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  29.63 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  29.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  29.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  29.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  29.63 [D][runtime_image:243]: Decoding complete: 220x220, 35779 bytes
+  29.63 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  29.68 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  29.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  29.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  29.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  29.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  29.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  29.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  29.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  29.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  29.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  29.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  29.95 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  29.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  29.95 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  29.95 [D][runtime_image:243]: Decoding complete: 220x220, 35789 bytes
+  30.01 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  30.07 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  30.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  30.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  30.07 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  30.13 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  30.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  30.24 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  30.29 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  30.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  30.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  30.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  30.35 [D][runtime_image:243]: Decoding complete: 220x220, 35706 bytes
+  30.35 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  30.41 [W][component:419]: online_image.image took a long time for an operation (58 ms), max is 50 ms
+  30.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  30.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  30.41 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  30.46 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  30.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  30.52 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  30.58 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  30.58 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  30.58 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  30.63 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  30.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  30.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  30.63 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  30.69 [D][runtime_image:243]: Decoding complete: 220x220, 34974 bytes
+  30.69 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  30.74 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  30.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  30.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  30.74 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  30.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  30.79 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  30.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  30.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  30.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  31.01 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  31.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  31.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  31.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  31.01 [D][runtime_image:243]: Decoding complete: 220x220, 35476 bytes
+  31.06 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  31.12 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  31.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  31.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  31.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  31.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  31.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  31.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  31.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  31.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  31.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  31.29 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  31.34 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  31.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  31.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  31.39 [D][runtime_image:243]: Decoding complete: 220x220, 35784 bytes
+  31.39 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  31.45 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  31.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  31.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  31.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  31.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  31.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  31.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  31.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3abc4
+  31.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  31.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  31.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  31.72 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  31.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  31.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  31.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  31.72 [D][runtime_image:243]: Decoding complete: 220x220, 35784 bytes
+  31.78 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  31.83 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  31.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  31.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  31.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  31.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  31.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  31.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  32.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  32.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  32.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  32.05 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  32.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  32.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  32.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  32.11 [D][runtime_image:243]: Decoding complete: 220x220, 36880 bytes
+  32.11 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  32.16 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  32.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  32.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  32.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  32.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  32.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  32.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  32.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  32.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  32.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  32.43 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  32.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  32.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  32.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  32.43 [D][runtime_image:243]: Decoding complete: 220x220, 37639 bytes
+  32.50 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  32.55 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  32.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  32.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  32.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  32.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  32.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  32.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  32.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  32.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  32.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  32.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  32.77 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  32.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  32.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  32.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  32.83 [D][runtime_image:243]: Decoding complete: 220x220, 38013 bytes
+  32.83 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  32.88 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  32.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  32.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  32.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  32.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  32.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  33.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  33.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  33.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  33.11 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  33.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  33.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  33.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  33.17 [D][runtime_image:243]: Decoding complete: 220x220, 37524 bytes
+  33.17 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  33.23 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  33.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  33.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  33.23 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  33.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  33.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  33.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  33.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  33.45 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  33.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  33.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  33.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  33.51 [D][runtime_image:243]: Decoding complete: 220x220, 36886 bytes
+  33.51 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  33.56 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  33.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  33.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  33.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  33.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  33.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  33.66 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  33.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  33.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  33.82 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  33.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  33.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  33.82 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  33.88 [D][runtime_image:243]: Decoding complete: 220x220, 36196 bytes
+  33.88 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  33.94 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  33.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  33.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  33.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  33.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  33.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  33.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  34.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  34.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  34.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  34.11 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  34.16 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  34.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  34.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  34.22 [D][runtime_image:243]: Decoding complete: 220x220, 35156 bytes
+  34.28 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  34.33 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  34.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  34.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  34.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  34.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  34.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  34.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  34.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  34.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  34.56 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  34.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  34.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  34.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  34.62 [D][runtime_image:243]: Decoding complete: 220x220, 34961 bytes
+  34.62 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  34.68 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  34.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  34.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  34.68 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  34.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  34.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  34.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  34.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  34.85 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  34.90 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  34.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  34.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  34.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  34.96 [D][runtime_image:243]: Decoding complete: 220x220, 34595 bytes
+  34.96 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  35.01 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  35.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  35.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  35.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  35.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  35.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  35.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  35.12 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  35.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  35.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  35.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  35.28 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  35.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  35.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  35.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  35.28 [D][runtime_image:243]: Decoding complete: 220x220, 35030 bytes
+  35.34 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  35.40 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  35.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  35.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  35.40 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  35.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  35.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  35.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  35.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  35.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  35.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  35.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  35.61 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  35.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  35.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  35.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  35.67 [D][runtime_image:243]: Decoding complete: 220x220, 35368 bytes
+  35.67 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  35.73 [W][component:419]: online_image.image took a long time for an operation (56 ms), max is 50 ms
+  35.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  35.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  35.73 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  35.78 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  35.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  35.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  35.84 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  35.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  35.90 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  36.00 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  36.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  36.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  36.00 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  36.00 [D][runtime_image:243]: Decoding complete: 220x220, 35947 bytes
+  36.00 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  36.06 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  36.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  36.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  36.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  36.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  36.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  36.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  36.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  36.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  36.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  36.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  36.33 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  36.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  36.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  36.33 [D][runtime_image:243]: Decoding complete: 220x220, 36086 bytes
+  36.39 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  36.45 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  36.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  36.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  36.45 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  36.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  36.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  36.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  36.56 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  36.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  36.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  36.62 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  36.67 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  36.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  36.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  36.72 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  36.72 [D][runtime_image:243]: Decoding complete: 220x220, 36593 bytes
+  36.72 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  36.77 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  36.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  36.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  36.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  36.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  36.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  36.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  36.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  36.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  36.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  37.06 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  37.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  37.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  37.06 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  37.06 [D][runtime_image:243]: Decoding complete: 220x220, 36789 bytes
+  37.11 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  37.17 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  37.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  37.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  37.17 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  37.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  37.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  37.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  37.22 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  37.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  37.34 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  37.39 [W][component:419]: online_image.image took a long time for an operation (70 ms), max is 60 ms
+  37.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  37.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  37.39 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  37.44 [D][runtime_image:243]: Decoding complete: 220x220, 36834 bytes
+  37.45 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  37.50 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  37.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  37.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  37.50 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  37.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  37.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  37.61 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  37.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  37.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  37.67 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  37.77 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  37.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  37.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  37.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  37.77 [D][runtime_image:243]: Decoding complete: 220x220, 36558 bytes
+  37.83 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  37.88 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  37.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  37.88 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  37.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a700
+  37.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  37.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  37.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  37.94 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ca44
+  38.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  38.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  38.05 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  38.10 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  38.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  38.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  38.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  38.10 [D][runtime_image:243]: Decoding complete: 220x220, 36301 bytes
+  38.16 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  38.21 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  38.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  38.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  38.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  38.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  38.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  38.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  38.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  38.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  38.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  38.44 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  38.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  38.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  38.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  38.49 [D][runtime_image:243]: Decoding complete: 220x220, 35274 bytes
+  38.49 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  38.54 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  38.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  38.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  38.59 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  38.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  38.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  38.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  38.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  38.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  38.76 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  38.81 [W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+  38.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  38.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  38.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  38.87 [D][runtime_image:243]: Decoding complete: 220x220, 34564 bytes
+  38.87 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  38.93 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  38.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  38.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  38.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  38.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a9c
+  38.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  38.98 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  39.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  39.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  39.10 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  39.16 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  39.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  39.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  39.16 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  39.21 [D][runtime_image:243]: Decoding complete: 220x220, 34066 bytes
+  39.22 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  39.27 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  39.27 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  39.28 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  39.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff396cc
+  39.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  39.33 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  39.38 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  39.43 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  39.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  39.44 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  39.55 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  39.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  39.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  39.55 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  39.55 [D][runtime_image:243]: Decoding complete: 220x220, 34365 bytes
+  39.55 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  39.60 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  39.60 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  39.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  39.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  39.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a9dc
+  39.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  39.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  39.71 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  39.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  39.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  39.87 [W][component:419]: online_image.image took a long time for an operation (69 ms), max is 60 ms
+  39.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  39.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b91c
+  39.92 [D][runtime_image:243]: Decoding complete: 220x220, 34593 bytes
+  39.97 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  40.03 [W][component:419]: online_image.image took a long time for an operation (57 ms), max is 50 ms
+  40.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  40.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  40.03 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  40.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a518
+  40.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  40.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b734
+  40.09 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  40.20 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a424
+  40.20 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  40.20 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  40.25 [W][component:419]: online_image.image took a long time for an operation (68 ms), max is 60 ms
+  40.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a330
+  40.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bb04
+  40.25 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  40.25 [D][runtime_image:243]: Decoding complete: 220x220, 34978 bytes
+  40.31 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  40.37 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  40.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a23c
+  40.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  40.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  40.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a148
+  40.42 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b640
+  40.48 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  40.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a054
+  40.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  40.53 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  40.64 [W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+  40.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f60
+  40.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  40.64 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c950
+  40.64 [D][runtime_image:243]: Decoding complete: 220x220, 34111 bytes
+  40.64 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  40.70 [W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+  40.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e6c
+  40.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  40.70 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  40.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d78
+  40.81 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  40.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c84
+  40.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  40.87 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c768
+  40.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b90
+  40.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  40.93 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  40.99 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  40.99 [D][runtime_image:243]: Decoding complete: 220x220, 33167 bytes
+  40.99 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  41.04 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  41.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff399a8
+  41.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bbf8
+  41.04 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c580
+  41.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  41.15 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c48c
+  41.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff398b4
+  41.21 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b828
+  41.32 [W][component:419]: online_image.image took a long time for an operation (72 ms), max is 60 ms
+  41.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff397c0
+  41.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b54c
+  41.32 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  41.32 [D][runtime_image:243]: Decoding complete: 220x220, 32213 bytes
+  41.32 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  41.37 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  41.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  41.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b458
+  41.37 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c2a4
+  41.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c85c
+  41.49 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c1b0
+  41.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff395d8
+  41.54 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c674
+  41.65 [W][component:419]: online_image.image took a long time for an operation (72 ms), max is 60 ms
+  41.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3aad0
+  41.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c398
+  41.65 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  41.65 [D][runtime_image:243]: Decoding complete: 220x220, 30875 bytes
+  41.71 [D][runtime_image:326]: Allocating buffer: 220x220, 96800 bytes
+  41.77 [W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+  41.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a8e8
+  41.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c0bc
+  41.77 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bfc8
+  41.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7f4
+  41.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  41.83 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bed4
+  41.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bcec
+  41.89 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bde0
+  42.01 [W][component:419]: online_image.image took a long time for an operation (71 ms), max is 60 ms
+  42.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a60c
+  42.01 [W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3ba10
+  42.01 [D][runtime_image:243]: Decoding complete: 220x220, 29086 bytes
+  42.01 [D][main:1419]: All panel images downloaded

@@ -1,0 +1,10 @@
+[Unit]
+Description=Check every 30 s that Spotify on the JBL is really sounding
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=30s
+AccuracySec=5s
+
+[Install]
+WantedBy=timers.target

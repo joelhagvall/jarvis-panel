@@ -1,0 +1,12 @@
+{
+  "domain": "jarvis_agent",
+  "name": "Jarvis",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["conversation", "tts", "stt", "cloud", "http", "esphome"],
+  "documentation": "https://github.com/joelhagvall/jarvis-panel",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "1.1.0"
+}

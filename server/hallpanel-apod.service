@@ -1,0 +1,12 @@
+# NASA's picture of the day as the panel's background (server/apod.py). Run by hallpanel-apod.timer,
+# and once by tools/deploy_jarvis.sh after it has copied the images.
+[Unit]
+Description=Hallway panel: NASA's picture of the day as the background
+After=network-online.target
+
+[Service]
+Type=oneshot
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStart=%h/hallpanel-live/venv/bin/python3 %h/hallpanel-live/server/apod.py --scheduled

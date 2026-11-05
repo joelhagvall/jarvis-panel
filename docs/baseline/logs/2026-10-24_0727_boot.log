@@ -1,0 +1,55 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.67 [I][app:060]: Running through setup()
+   1.98 [I][esp-idf:000]: E (415) H_API: ESP-Hosted link not yet up
+   4.84 [W][component:290]: api set Warning flag: waiting for client connection
+   4.89 [I][direct_display:093]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   4.90 [I][bench:059]: Measuring LVGL rendering
+   4.90 [I][app:117]: setup() finished successfully!
+   4.90 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+   4.90 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.90 [W][component:290]: wifi set Warning flag: associating to network
+   5.00 [W][component:419]: lvgl took a long time for an operation (74 ms), max is 50 ms
+   5.00 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 07:23:01 +0200
+   5.00 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.05 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.14 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.20 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+   9.20 [W][component:313]: api cleared Warning flag
+   9.20 [W][component:313]: wifi cleared Warning flag
+   9.36 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  12.14 [W][component:419]: online_image.image took a long time for an operation (66 ms), max is 50 ms
+  12.35 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  14.90 [I][direct_display:096]: submit count 18 avg 0.15 ms max 0.24 ms
+  15.76 [W][component:419]: online_image.image took a long time for an operation (203 ms), max is 50 ms
+  17.78 [W][component:419]: online_image.image took a long time for an operation (223 ms), max is 210 ms
+  18.10 [W][component:419]: online_image.image took a long time for an operation (272 ms), max is 230 ms
+  19.98 [I][packed_orb:065]: Loaded 143 compressed frames in 1564 ms; retained 4305012 bytes
+  19.98 [I][packed_orb:042]: Installed 143 lossless LZ4 frames; decoded image cache disabled
+  19.98 [I][main:1876]: Ready sound
+  24.95 [I][direct_display:096]: submit count 1 avg 0.25 ms max 0.25 ms
+  34.43 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 07:23:01 +0200
+  34.43 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  34.97 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+  35.35 [I][bench:2427]: Performance test started
+  37.37 [I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  39.39 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.3 ms, max 61.3 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  41.36 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.7 ms, max 44.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  43.38 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 22.0 ms, max 22.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  44.99 [I][direct_display:096]: submit count 41 avg 0.13 ms max 0.24 ms
+  45.36 [I][bench:067]: page_orb | redraws/s 24.0 | render avg 17.7 ms, max 57.2 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  47.40 [I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 66.7 ms, max 66.7 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  49.39 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.5 ms, max 61.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  51.37 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 44.2 ms, max 44.2 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  53.40 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.3 ms, max 21.3 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  54.97 [I][direct_display:096]: submit count 52 avg 0.14 ms max 0.46 ms
+  55.40 [I][bench:067]: page_orb | redraws/s 24.3 | render avg 17.9 ms, max 57.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  57.42 [I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.6 ms, max 65.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  59.42 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 62.5 ms, max 62.5 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  61.40 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 50.0 ms, max 50.0 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  61.56 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  63.39 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.6 ms, max 21.6 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  65.00 [I][direct_display:096]: submit count 52 avg 0.13 ms max 0.24 ms
+  65.43 [I][bench:067]: page_orb | redraws/s 24.0 | render avg 17.9 ms, max 55.4 ms | PSRAM free 19242 kB (lowest 18215 kB) | internal free 324 kB
+  65.43 [I][bench:2897]: Performance test finished
+  74.99 [I][direct_display:096]: submit count 13 avg 0.14 ms max 0.24 ms
+  84.97 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms

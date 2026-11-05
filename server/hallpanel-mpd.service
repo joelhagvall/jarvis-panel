@@ -1,0 +1,17 @@
+# systemd user service on Jarvis: MPD for the Bluetooth speaker (docs/bluetooth-speaker.md).
+# tools/deploy_jarvis.sh installs it once server/bluetooth/setup.sh has installed mpd and BlueALSA.
+[Unit]
+Description=MPD for Jarvis's Bluetooth speaker (the radio)
+
+[Service]
+# 2026-11-02 review: same hardening set as hallpanel.service; MPD writes only in $HOME/.local.
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStartPre=/bin/mkdir -p %h/.local/share/hallpanel/mpd/playlists
+ExecStart=/usr/bin/mpd --no-daemon %h/hallpanel-live/server/bluetooth/mpd.conf
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

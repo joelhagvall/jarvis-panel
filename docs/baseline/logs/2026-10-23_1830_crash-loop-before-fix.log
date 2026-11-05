@@ -1,0 +1,1563 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+[E][esp32.crash:436]: *** CRASH DETECTED ON PREVIOUS BOOT ***
+[E][esp32.crash:441]:   Reason: Fault
+[E][esp32.crash:443]:   Crashed core: 1
+[E][esp32.crash:410]:   Captured by a different firmware build; addresses belong to that build's ELF
+[E][esp32.crash:411]:   pc: 0x4011CFC2
+[E][esp32.crash:404]:   bt0: 0x4011CFC2
+[E][esp32.crash:404]:   bt1: 0x4011BCC8
+[E][esp32.crash:404]:   bt2: 0x4FF32A58
+[E][esp32.crash:404]:   bt3: 0x4FF5917C
+[E][esp32.crash:404]:   bt4: 0x4FF32D60
+[E][esp32.crash:404]:   bt5: 0x4FF38980
+[E][esp32.crash:404]:   bt6: 0x4FF327F4
+[E][esp32.crash:404]:   bt7: 0x40142DFD
+[E][esp32.crash:404]:   bt8: 0x4FF32C40
+[E][esp32.crash:404]:   bt9: 0x40142DD0
+[E][esp32.crash:404]:   bt10: 0x40142DD0
+[E][esp32.crash:404]:   bt11: 0x4011F348
+[I][app:060]: Running through setup()
+[I][esp-idf:000]: E (418) H_API: ESP-Hosted link not yet up
+[W][component:290]: api set Warning flag: waiting for client connection
+[I][app:117]: setup() finished successfully!
+[W][component:290]: wifi set Warning flag: scanning for networks
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: lvgl took a long time for an operation (63 ms), max is 50 ms
+[I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 18:27:42 +0200
+[I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a988
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: wifi took a long time for an operation (72 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a988
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a988
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: wifi took a long time for an operation (104 ms), max is 80 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][component:313]: wifi cleared Warning flag
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][component:419]: online_image.image took a long time for an operation (94 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (92 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (124 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (139 ms), max is 130 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: online_image.image took a long time for an operation (180 ms), max is 140 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (194 ms), max is 190 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a988
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a988
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][component:419]: online_image.image took a long time for an operation (55 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39678
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][component:419]: online_image.image took a long time for an operation (64 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b404
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c714
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39b3c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39a48
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39954
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39860
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][component:419]: online_image.image took a long time for an operation (65 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3976c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c250
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39584
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39490
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c808
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c620
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c068
+[W][component:419]: online_image.image took a long time for an operation (64 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c438
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3939c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a894
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bf74
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a7a0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bd8c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a6ac
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][component:419]: online_image.image took a long time for an operation (52 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a5b8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a4c4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a3d0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bab0
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a2dc
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b310
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b9bc
+[W][component:419]: online_image.image took a long time for an operation (54 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a1e8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b21c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a0f4
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c52c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3a000
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c344
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b7d4
+[W][component:419]: online_image.image took a long time for an operation (67 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39f0c
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3c15c
+[W][component:419]: online_image.image took a long time for an operation (53 ms), max is 50 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39e18
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3be80
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b6e0
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39d24
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bc98
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b5ec
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3bba4
+[W][component:419]: online_image.image took a long time for an operation (66 ms), max is 60 ms
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff39c30
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b8c8
+[W][lvgl:000]: [Warn] lv_image_set_src: failed to get image info: 0x4ff3b4f8
+[I][safe_mode:154]: Boot seems successful; resetting boot loop counter

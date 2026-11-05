@@ -1,0 +1,6 @@
+[Unit]
+Description=Fetch Spotify Soloist's current build
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh %h/hallpanel-live/server/soloist/update.sh

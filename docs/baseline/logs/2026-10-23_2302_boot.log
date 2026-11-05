@@ -1,0 +1,41 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.86 [I][app:060]: Running through setup()
+   2.18 [I][esp-idf:000]: E (395) H_API: ESP-Hosted link not yet up
+   5.12 [W][component:290]: api set Warning flag: waiting for client connection
+   5.12 [I][bench:045]: Measuring LVGL rendering
+   5.12 [I][app:117]: setup() finished successfully!
+   5.12 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   5.12 [W][component:290]: wifi set Warning flag: associating to network
+   5.23 [W][component:419]: lvgl took a long time for an operation (81 ms), max is 50 ms
+   5.23 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 22:58:02 +0200
+   5.23 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.23 [W][component:313]: sound_level.sensor cleared Warning flag
+   8.12 [W][component:419]: wifi_signal.sensor took a long time for an operation (88 ms), max is 50 ms
+   9.40 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.45 [W][component:313]: api cleared Warning flag
+   9.45 [W][component:313]: wifi cleared Warning flag
+  10.95 [W][component:419]: online_image.image took a long time for an operation (93 ms), max is 50 ms
+  12.55 [I][main:1803]: Ready sound skipped: night
+  12.86 [W][component:419]: online_image.image took a long time for an operation (90 ms), max is 50 ms
+  19.55 [I][orb_atlas:076]: RGB565 atlas unpacked in 3287 ms
+  20.31 [I][orb_atlas:067]: Installed 143 frames without copying pixels
+  50.97 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 22:58:02 +0200
+  50.97 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  56.59 [I][bench:2335]: Performance test started
+  58.57 [I][bench:053]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 325 kB
+  60.56 [I][bench:053]: page_hemmet | redraws/s 0.5 | render avg 68.6 ms, max 68.6 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 325 kB
+  61.80 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  62.56 [I][bench:053]: page_tavla | redraws/s 0.5 | render avg 53.1 ms, max 53.1 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  64.57 [I][bench:053]: page_natt | redraws/s 0.5 | render avg 29.0 ms, max 29.0 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  66.55 [I][bench:053]: page_orb | redraws/s 24.5 | render avg 6.3 ms, max 7.6 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  68.58 [I][bench:053]: page_glass_v2 | redraws/s 0.5 | render avg 70.7 ms, max 70.7 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  70.57 [I][bench:053]: page_hemmet | redraws/s 0.5 | render avg 69.4 ms, max 69.4 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  72.60 [I][bench:053]: page_tavla | redraws/s 0.5 | render avg 53.4 ms, max 53.4 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  74.57 [I][bench:053]: page_natt | redraws/s 0.5 | render avg 29.5 ms, max 29.5 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  76.61 [I][bench:053]: page_orb | redraws/s 25.0 | render avg 7.3 ms, max 55.1 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  78.60 [I][bench:053]: page_glass_v2 | redraws/s 0.5 | render avg 70.4 ms, max 70.4 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  80.58 [I][bench:053]: page_hemmet | redraws/s 0.5 | render avg 68.9 ms, max 68.9 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  82.62 [I][bench:053]: page_tavla | redraws/s 0.5 | render avg 53.3 ms, max 53.3 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  84.59 [I][bench:053]: page_natt | redraws/s 0.5 | render avg 29.3 ms, max 29.3 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  86.61 [I][bench:053]: page_orb | redraws/s 25.0 | render avg 7.1 ms, max 54.4 ms | PSRAM free 10573 kB (lowest 10562 kB) | internal free 324 kB
+  86.61 [I][bench:2743]: Performance test finished

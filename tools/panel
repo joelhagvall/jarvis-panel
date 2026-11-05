@@ -1,0 +1,173 @@
+#!/bin/sh
+# Stable entry point for every agent; works regardless of its current directory.
+set -eu
+panel_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+panel_python="$panel_root/.venv/bin/python"
+
+shq() {
+  # POSIX shquote for arguments that cross a remote shell command line (' -> '\''), 2026-11-02 review:
+  # an argument can never start another command there. Text inside single quotes cannot contain a quote.
+  printf "'%s'" "$(printf '%s' "$1" | sed "s/'/'\\\\''/g")"
+}
+if [ ! -x "$panel_python" ]; then
+  echo "Panel Python environment missing: $panel_python" >&2
+  exit 1
+fi
+if [ "${1:-}" = preflight ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_preflight.py" "$@"
+fi
+if [ "${1:-}" = boot-wall ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_boot_wall.py" "$@"
+fi
+if [ "${1:-}" = host-link ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_host_link.py" "$@"
+fi
+if [ "${1:-}" = gates ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_gates.py" "$@"
+fi
+if [ "${1:-}" = lock ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_lock.py" "$@"
+fi
+if [ "${1:-}" = audio-check ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_audio_check.py" "$@"
+fi
+if [ "${1:-}" = smoke ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_ui_test.py" --live "$@"
+fi
+if [ "${1:-}" = turntable-fps ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/turntable_fps.py" "$@"
+fi
+if [ "${1:-}" = visual-diff ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/visual_ref_diff.py" "$@"
+fi
+if [ "${1:-}" = music-cover ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/music_cover.py" "$@"
+fi
+if [ "${1:-}" = vinyl-flow ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/vinyl_flow.py" "$@"
+fi
+if [ "${1:-}" = music-load ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_music_load.py" "$@"
+fi
+if [ "${1:-}" = optical ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_optical.py" "$@"
+fi
+if [ "${1:-}" = detail-load ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_detail_load.py" "$@"
+fi
+if [ "${1:-}" = tap-cadence ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/tap_cadence.py" "$@"
+fi
+if [ "${1:-}" = throughput-history ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/throughput_history.py" "$@"
+fi
+if [ "${1:-}" = render-cost ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/render_cost.py" "$@"
+fi
+if [ "${1:-}" = ha-calls ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/ha_calls.py" "$@"
+fi
+if [ "${1:-}" = crash ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_crash.py" "$@"
+fi
+if [ "${1:-}" = wave ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_wave.py" "$@"
+fi
+if [ "${1:-}" = visual ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_visual.py" "$@"
+fi
+if [ "${1:-}" = ci ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_ci.py" "$@"
+fi
+if [ "${1:-}" = recovery ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_recovery.py" "$@"
+fi
+if [ "${1:-}" = navigation-check ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/check_tab_gesture.py" "$@"
+fi
+if [ "${1:-}" = slider-check ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/check_slider_detents.py" "$@"
+fi
+if [ "${1:-}" = image ]; then
+  shift
+  exec "$panel_python" "$panel_root/server/panel_image.py" "$@"
+fi
+if [ "${1:-}" = color-check ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_color.py" "$@"
+fi
+if [ "${1:-}" = sl-check ]; then
+  # Free, read-only: the running Jarvis server's metro-card health (server/check_sl.py, docs/voice-plan.md).
+  exec sh "$panel_root/tools/jarvis_ssh.sh" "${JARVIS_SSH:-user@jarvis.local}" \
+    '~/hallpanel-live/venv/bin/python ~/hallpanel-live/server/check_sl.py'
+fi
+if [ "${1:-}" = turns ]; then
+  # Free, read-only: every "Hey Jarvis" turn and how it ended (server/show_turns.py, docs/voice-latency.md).
+  # 2026-11-02 review: each argument is shellquoted, so only show_turns.py's own arguments run on Jarvis.
+  shift
+  remote_args=""
+  for argv in "$@"; do
+    remote_args="$remote_args $(shq "$argv")"
+  done
+  exec sh "$panel_root/tools/jarvis_ssh.sh" "${JARVIS_SSH:-user@jarvis.local}" \
+    "python3 ~/hallpanel-live/server/show_turns.py$remote_args"
+fi
+if [ "${1:-}" = calendar-check ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/check_calendar_sync.py" "$@"
+fi
+if [ "${1:-}" = metrics ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_metrics.py" "$@"
+fi
+if [ "${1:-}" = responsiveness ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_responsiveness.py" "$@"
+fi
+if [ "${1:-}" = throughput ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_throughput.py" "$@"
+fi
+if [ "${1:-}" = soak ]; then
+  # Free, read-only: summarise the 5-minute health history on Jarvis (tools/panel_soak.py, docs/panel-monitor.md).
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_soak.py" "$@"
+fi
+if [ "${1:-}" = monitor ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_metrics.py" monitor "$@"
+fi
+if [ "${1:-}" = scheduled-smoke ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/panel_scheduled_smoke.py" "$@"
+fi
+if [ "${1:-}" = voice-latency ]; then
+  shift
+  exec "$panel_python" "$panel_root/tools/voice_latency.py" "$@"
+fi
+exec "$panel_python" "$panel_root/tools/panel_remote.py" "$@"

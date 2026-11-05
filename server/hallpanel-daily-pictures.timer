@@ -1,0 +1,10 @@
+# Every three hours: a source that has today's picture is not asked again; Bing's changes during the morning.
+[Unit]
+Description=Hallway panel: fetch today's background pictures
+
+[Timer]
+OnCalendar=*-*-* 00/3:50:00 Europe/Stockholm
+Persistent=true
+
+[Install]
+WantedBy=timers.target

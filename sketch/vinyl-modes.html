@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spelas nu-lägen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Mockup of three looks for the Spelas nu page, at the panel's real 1024x600 geometry (now_playing.py,
+   turntable.py, vinyl_motion.h). Uses the repo's own turntable/overlay pictures; the cover loads from Spotify's CDN. */
+:root{
+  --bg:#0B0D12; --fg:#E8EDEF; --muted:#8C989E; --line:#262B36; --accent:#7FB8FF;
+  --sheet:#141826; --white:#FFFFFF;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif}
+body{padding:24px 16px 48px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font-size:26px;margin:0;font-weight:700;letter-spacing:-.3px}
+.lead{color:var(--muted);margin:0;max-width:72ch;line-height:1.5}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar button{font:600 14px Inter,sans-serif;color:var(--fg);background:#1A1F2B;border:1px solid var(--line);
+  border-radius:999px;padding:9px 16px;cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--fg);color:#10131A;border-color:var(--fg)}
+.bar label{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:14px;margin-left:8px;cursor:pointer}
+.sep{width:1px;height:24px;background:var(--line);margin:0 6px}
+
+/* The panel: a fixed 1024x600 stage scaled to the column's width. */
+.bezel{background:#050607;border-radius:22px;padding:14px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.fit{position:relative;width:100%;aspect-ratio:1024/600;overflow:hidden;border-radius:6px}
+.stage{position:absolute;left:0;top:0;width:1024px;height:600px;background:var(--sheet);transform-origin:0 0;
+  overflow:hidden;color:#fff;user-select:none}
+.abs{position:absolute}
+
+/* Turntable layer */
+#tt{left:0;top:0;width:1024px;height:600px;transition:opacity .5s ease, transform .6s cubic-bezier(.3,.7,.2,1)}
+#tt.away{opacity:0;transform:translateX(-40px)}
+#plinth{left:29px;top:67px;width:407px;height:374px}
+#disc{left:72px;top:110px;width:288px;height:288px;border-radius:50%;overflow:hidden;cursor:pointer}
+#discSpin{position:absolute;inset:0;border-radius:50%;background:#111 center/cover no-repeat}
+#discSpin.black{background:
+  radial-gradient(circle at 50% 50%, transparent 0 52px, rgba(255,255,255,.0) 52px),
+  repeating-radial-gradient(circle at 50% 50%, #121214 0 1.6px, #1B1B1E 1.6px 3.2px)}
+#label{position:absolute;left:50%;top:50%;width:100px;height:100px;margin:-50px 0 0 -50px;border-radius:50%;
+  background:#333 center/cover no-repeat;display:none;box-shadow:0 0 0 2px rgba(0,0,0,.35)}
+#label::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;margin:-4px;border-radius:50%;background:#C9CDD3}
+#discSpin.black #label{display:block}
+#overlay{left:72px;top:110px;width:288px;height:288px;pointer-events:none}
+#arm{left:0;top:0;width:1024px;height:600px;pointer-events:none;overflow:visible}
+
+/* Sleeve layer */
+#sl{left:0;top:0;width:1024px;height:600px;opacity:0;pointer-events:none;transition:opacity .45s ease}
+#sl.on{opacity:1;pointer-events:auto}
+#peek{left:162px;top:110px;width:288px;height:288px;border-radius:50%;cursor:pointer;
+  background:repeating-radial-gradient(circle at 50% 50%, #121214 0 1.6px, #1C1C20 1.6px 3.2px);
+  box-shadow:0 8px 24px rgba(0,0,0,.45), 0 0 0 1.5px rgba(255,255,255,.14);transition:transform .7s cubic-bezier(.3,.7,.2,1)}
+#peek::before{content:"";position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 200deg, transparent 0 20deg, rgba(255,255,255,.07) 35deg, transparent 55deg,
+  transparent 180deg, rgba(255,255,255,.05) 215deg, transparent 235deg)}
+#peekLabel{position:absolute;left:94px;top:94px;width:100px;height:100px;border-radius:50%;background:#2A2F3A center/cover}
+#sleeve{left:36px;top:98px;width:312px;height:312px;border-radius:3px;cursor:pointer;
+  background:#222 center/cover no-repeat;box-shadow:0 14px 34px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.06);
+  transition:transform .7s cubic-bezier(.3,.7,.2,1)}
+#sleeve::after{content:"";position:absolute;inset:0;border-radius:3px;pointer-events:none;
+  background:linear-gradient(115deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,0) 28%),
+             linear-gradient(90deg, rgba(0,0,0,.25) 0, rgba(0,0,0,0) 6px)}
+#sl.tuck #peek{transform:translateX(-126px)}
+#sl.tuck #sleeve{transform:translateX(0)}
+
+/* Small sleeve in the text column (look C) */
+#mini{left:456px;top:100px;width:152px;height:152px;border-radius:3px;background:#222 center/cover;
+  box-shadow:0 10px 24px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.06);display:none}
+#mini::after{content:"";position:absolute;inset:0;border-radius:3px;
+  background:linear-gradient(115deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,0) 30%)}
+
+/* Right column */
+#col{left:456px;top:0;width:512px;height:500px;transition:left .4s ease,width .4s ease}
+.src{position:absolute;top:110px;font:600 16px Inter;color:rgba(255,255,255,.62);letter-spacing:.2px}
+.title{position:absolute;top:136px;font:700 38px/1.15 Inter;letter-spacing:-.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+.artist{position:absolute;top:188px;font:500 22px Inter;color:rgba(255,255,255,.86)}
+.album{position:absolute;top:220px;font:500 17px Inter;color:rgba(255,255,255,.55);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+.col-c .src{left:172px} .col-c .title{left:172px;width:340px;font-size:30px;top:134px}
+.col-c .artist{left:172px;top:178px;font-size:20px} .col-c .album{left:172px;width:340px;top:208px;font-size:15px;white-space:normal;line-height:1.3}
+#time{position:absolute;left:456px;top:269px;width:512px}
+.track{height:6px;border-radius:3px;background:rgba(255,255,255,.18);position:relative}
+.fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:#fff}
+.times{display:flex;justify-content:space-between;font:600 15px Inter;color:rgba(255,255,255,.7);margin-top:8px}
+#ctl{position:absolute;left:456px;top:319px;display:flex;align-items:center;gap:0}
+.btn{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;cursor:pointer;position:absolute}
+.btn.big{width:72px;height:72px;background:#fff}
+.btn svg{width:26px;height:26px;fill:#fff}
+.btn.big svg{width:34px;height:34px;fill:#141826}
+#out{left:830px;top:20px;height:44px;padding:0 18px 0 16px;border-radius:22px;background:rgba(255,255,255,.12);
+  display:flex;align-items:center;gap:10px;font:600 16px Inter}
+#out svg{width:20px;height:20px;fill:#fff}
+#vol{left:0;top:508px;width:1024px;height:92px}
+#vol .rule{position:absolute;left:56px;top:0;width:912px;height:1px;background:rgba(255,255,255,.08)}
+#vol svg{position:absolute;width:30px;height:30px;fill:#fff;top:31px}
+#vol .vt{position:absolute;left:120px;top:42px;width:720px;height:8px;border-radius:4px;background:rgba(255,255,255,.18)}
+#vol .vf{position:absolute;left:0;top:0;bottom:0;width:34%;border-radius:4px;background:#fff}
+#vol .vk{position:absolute;left:calc(34% - 14px);top:-10px;width:28px;height:28px;border-radius:50%;background:#fff}
+#vol .pc{position:absolute;left:871px;top:36px;font:700 20px Inter}
+#knob{left:37px;top:387px;width:70px;height:48px}
+#knob span{position:absolute;font:700 13px Inter;color:#E6D6C4}
+.hint{left:20px;bottom:100px;font:600 13px Inter;color:rgba(255,255,255,.0);transition:color .3s}
+.toast{position:absolute;left:50%;top:22px;transform:translateX(-50%);padding:8px 14px;border-radius:999px;
+  background:rgba(255,255,255,.14);font:600 14px Inter;opacity:0;transition:opacity .25s}
+.toast.on{opacity:1}
+
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:#12151D;border:1px solid var(--line);border-radius:14px;padding:16px 18px;line-height:1.5;font-size:14.5px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:#B9C2C7}
+.card .tag{display:inline-block;font:700 11px Inter;letter-spacing:.6px;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Spelas nu – tre lägen</h1>
+    <p class="lead">Panelens riktiga mått (1024×600) och skivspelarbilder från repot. Tryck på skivan eller konvolutet för att byta läge. Paus/play fungerar.</p>
+  </header>
+
+  <div class="bar" role="toolbar">
+    <button data-mode="A" aria-pressed="true">A · Skivspelare (nu)</button>
+    <button data-mode="B" aria-pressed="false">B · Konvolut</button>
+    <button data-mode="C" aria-pressed="false">C · Svart skiva + konvolut</button>
+    <span class="sep"></span>
+    <label><input type="checkbox" id="auto" checked> Auto: paus → konvolut (demo 3 s, på riktigt ~30 s)</label>
+  </div>
+
+  <div class="bezel"><div class="fit" id="fit"><div class="stage" id="stage">
+
+    <!-- Turntable (A, C) -->
+    <div class="abs" id="tt">
+      <img class="abs" id="plinth" src="../styles/glass-v2/assets/turntable_p1.png" alt="">
+      <div class="abs" id="disc" title="Tryck: byt läge"><div id="discSpin"><div id="label"></div></div></div>
+      <img class="abs" id="overlay" src="../styles/glass-v2/assets/vinyl_overlay_288_p1.png" alt="">
+      <div class="abs" id="knob"><span style="left:44px;top:7px">33</span><span style="left:44px;top:23px;opacity:.45">45</span></div>
+      <svg class="abs" id="arm" viewBox="0 0 1024 600"></svg>
+    </div>
+
+    <!-- Sleeve (B) -->
+    <div class="abs" id="sl">
+      <div class="abs" id="peek" title="Tryck: byt läge"><div id="peekLabel"></div></div>
+      <div class="abs" id="sleeve" title="Tryck: byt läge"></div>
+    </div>
+
+    <div class="abs" id="mini"></div>
+
+    <div class="abs" id="col">
+      <div class="src">Spotify</div>
+      <div class="title">Be My Lover</div>
+      <div class="artist">La Bouche</div>
+      <div class="album">Best Of La Bouche feat. Melanie Thornton · 1995</div>
+    </div>
+    <div id="time"><div class="track"><div class="fill" id="fill"></div></div>
+      <div class="times"><span id="t0">2:03</span><span id="t1">-1:56</span></div></div>
+    <div id="ctl">
+      <div class="btn" style="left:0;top:8px"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></div>
+      <div class="btn big" id="pp" style="left:80px;top:0"><svg viewBox="0 0 24 24" id="ppIcon"></svg></div>
+      <div class="btn" style="left:176px;top:8px"><svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg></div>
+      <div class="btn" style="left:256px;top:8px"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></div>
+    </div>
+    <div class="abs" id="out"><svg viewBox="0 0 24 24"><path d="M12 12a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM17 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H7V4h10z"/></svg>JBL Charge 4</div>
+    <div class="abs" id="vol">
+      <div class="rule"></div>
+      <svg viewBox="0 0 24 24" style="left:37px"><path d="M7 9v6h4l5 5V4l-5 5H7z"/></svg>
+      <div class="vt"><div class="vf"></div><div class="vk"></div></div>
+      <div class="pc">34 %</div>
+      <svg viewBox="0 0 24 24" style="left:933px"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+    </div>
+    <div class="toast" id="toast"></div>
+  </div></div></div>
+
+  <div class="notes">
+    <div class="card"><span class="tag">A · nu</span><h3>Bildskiva som snurrar</h3>
+      <p>Mest liv i hallen. Omslaget syns, men roterat och med spår över, så det är svårt att se motivet. Dyrast för panelen: 60 bilder/s hela tiden.</p></div>
+    <div class="card"><span class="tag">B · lugn</span><h3>Konvolut med skivan halvt ute</h3>
+      <p>Omslaget syns skarpt och rakt. Helt stilla: ingen 60 fps-rendering, så panelen vilar. Mindre "levande" när den spelar.</p></div>
+    <div class="card"><span class="tag">C · båda</span><h3>Svart skiva + konvolut i ställ</h3>
+      <p>Som en riktig skivspelare: svart skiva med omslaget som etikett, konvolutet står bredvid. Textkolumnen blir smalare. Bara etiketten syns rotera.</p></div>
+  </div>
+</div>
+
+<script>
+// Panel geometry (now_playing.py / turntable.py / vinyl_motion.h).
+const CX=216, CY=254, R=144, OUTER=.92, INNER=.42, ARM_LENGTH=1.08;
+const COVER="https://i.scdn.co/image/ab67616d0000b273d5d55c3e0f45d6b9da1812d1";
+const DUR=239, RPM_DEG=200;            // 33 1/3 rpm = 200 degrees a second
+const $=id=>document.getElementById(id);
+
+// Fit the 1024x600 stage to the column.
+const fit=()=>{const s=$('fit').clientWidth/1024; $('stage').style.transform=`scale(${s})`;};
+addEventListener('resize',fit); fit();
+
+for (const id of ['discSpin','label','sleeve','peekLabel','mini']) $(id).style.backgroundImage=`url(${COVER})`;
+
+// The tonearm: vinyl_motion.h arm(), scale 2 colours from now_playing.py tonearm().
+function armPose(lift, groove){
+  const px=CX+R*1.22, py=CY-R*.78, len=R*ARM_LENGTH;
+  const rho=R*(OUTER+(INNER-OUTER)*groove);
+  const dx=CX-px, dy=CY-py, d=Math.hypot(dx,dy);
+  let c=(len*len+d*d-rho*rho)/(2*len*d); c=Math.max(-1,Math.min(1,c));
+  const base=Math.atan2(dy,dx)-Math.acos(c), lifted=Math.PI/2, a=base+(lifted-base)*lift;
+  const ex=px+len*Math.cos(a), ey=py+len*Math.sin(a), h=a+.4, hl=26;
+  return {px,py,ex,ey,hx:ex+hl*Math.cos(h),hy:ey+hl*Math.sin(h),wx:px-34*Math.cos(a),wy:py-34*Math.sin(a),
+    c0x:ex+hl*.45*Math.cos(h),c0y:ey+hl*.45*Math.sin(h),c1x:ex+hl*.95*Math.cos(h),c1y:ey+hl*.95*Math.sin(h),
+    rx:px,ry:py+len*.7};
+}
+function drawArm(lift, groove){
+  const p=armPose(lift,groove), L=(x0,y0,x1,y1,w,c)=>`<line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y1}" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;
+  const D=(x,y,dia,c,b)=>`<circle cx="${x}" cy="${y}" r="${dia/2}" fill="${c}" ${b?`stroke="${b}" stroke-width="2"`:''}/>`;
+  $('arm').innerHTML=D(p.rx,p.ry,18,'#24262C','#6A6E78')+D(p.px,p.py,48,'#D2D6DC')+L(p.px,p.py,p.wx,p.wy,10,'#18181C')
+    +L(p.px,p.py,p.ex,p.ey,8,'#2C2F36')+L(p.ex,p.ey,p.hx,p.hy,18,'#4A4E58')+L(p.ex,p.ey,p.hx,p.hy,14,'#18181C')
+    +L(p.c0x,p.c0y,p.c1x,p.c1y,8,'#E6E8EC')+D(p.px,p.py,26,'#141416');
+}
+
+// State
+let mode='A', view='tt', playing=true, angle=0, speed=RPM_DEG, lift=0, pos=123, pausedAt=null, last=performance.now();
+const icon=()=>$('ppIcon').innerHTML=playing?'<path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/>':'<path d="M8 5v14l11-7z"/>';
+const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),1400);}
+
+function setView(v){
+  view=v;
+  $('tt').classList.toggle('away', v==='sl');
+  $('sl').classList.toggle('on', v==='sl');
+  // The record slides out of the sleeve when it shows, and back in when leaving it.
+  $('sl').classList.add('tuck'); requestAnimationFrame(()=>requestAnimationFrame(()=>{ if(v==='sl') $('sl').classList.remove('tuck'); }));
+}
+function setMode(m){
+  mode=m;
+  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.mode===m));
+  const c=m==='C';
+  $('discSpin').classList.toggle('black', c);
+  $('discSpin').style.backgroundImage=c?'':`url(${COVER})`;
+  $('label').style.backgroundImage=`url(${COVER})`;
+  $('mini').style.display=c?'block':'none';
+  $('col').classList.toggle('col-c', c);
+  setView(m==='B'?'sl':'tt');
+}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+
+// Tap the record or the sleeve: swap between the turntable and the sleeve (in C: between C and B).
+function swap(){
+  if(view==='tt'){ setView('sl'); toast('Skivan in i konvolutet'); document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.mode==='B')); }
+  else { setMode(mode==='B'?'A':mode); toast('Skivan på tallriken'); }
+}
+['disc','sleeve','peek'].forEach(id=>$(id).onclick=swap);
+
+$('pp').onclick=()=>{
+  playing=!playing; icon(); pausedAt=playing?null:performance.now();
+  if(playing && view==='sl' && $('auto').checked && mode!=='B') setView('tt');
+};
+
+function tick(now){
+  const dt=Math.min(.05,(now-last)/1000); last=now;
+  // Pause stops the record in 1 s, play starts it in 0.6 s, the arm lifts in 0.4 s (docs/now-playing.md).
+  const target=playing?RPM_DEG:0, rate=RPM_DEG/(playing?.6:1);
+  speed+=Math.sign(target-speed)*Math.min(Math.abs(target-speed),rate*dt);
+  lift+=Math.sign((playing?0:1)-lift)*Math.min(Math.abs((playing?0:1)-lift),dt/.4);
+  angle=(angle+speed*dt)%360;
+  if(playing){pos+=dt; if(pos>DUR) pos=0;}
+  $('discSpin').style.transform=`rotate(${angle}deg)`;
+  drawArm(lift,pos/DUR);
+  $('fill').style.width=`${pos/DUR*100}%`; $('t0').textContent=fmt(pos); $('t1').textContent='-'+fmt(DUR-pos);
+  if(!playing && pausedAt && $('auto').checked && view==='tt' && now-pausedAt>3000){ setView('sl'); pausedAt=null; toast('Pausad: skivan in i konvolutet'); }
+  requestAnimationFrame(tick);
+}
+const start=location.hash.slice(1);   // #B or #C opens on that look
+icon(); setMode(['A','B','C'].includes(start)?start:'A'); requestAnimationFrame(tick);
+</script>
+</body>
+</html>

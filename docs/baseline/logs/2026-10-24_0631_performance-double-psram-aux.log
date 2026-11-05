@@ -1,0 +1,52 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+[06:31:46.782][I][bench:2398]: Performance test started
+[06:31:48.803][I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:49.417][I][direct_display:096]: submit count 2 avg 0.21 ms max 0.23 ms
+[06:31:50.783][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.5 ms, max 61.5 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:52.797][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.3 ms, max 46.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:54.788][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.7 ms, max 21.7 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:56.796][I][bench:067]: page_orb | redraws/s 25.0 | render avg 8.3 ms, max 46.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:58.798][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.8 ms, max 65.8 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:31:59.367][I][direct_display:096]: submit count 54 avg 0.14 ms max 0.25 ms
+[06:32:00.796][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.2 ms, max 61.2 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:02.803][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.7 ms, max 46.7 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:04.800][I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.3 ms, max 21.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:06.801][I][bench:067]: page_orb | redraws/s 24.5 | render avg 8.3 ms, max 45.9 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:08.820][I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.2 ms, max 65.2 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:09.369][I][direct_display:096]: submit count 53 avg 0.15 ms max 0.44 ms
+[06:32:10.819][I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.6 ms, max 61.6 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:12.814][I][bench:067]: page_tavla | redraws/s 0.5 | render avg 45.3 ms, max 45.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:14.813][I][bench:067]: page_natt | redraws/s 0.5 | render avg 22.3 ms, max 22.3 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:16.813][I][bench:067]: page_orb | redraws/s 25.0 | render avg 8.4 ms, max 48.0 ms | PSRAM free 9969 kB (lowest 9960 kB) | internal free 324 kB
+[06:32:16.819][I][bench:2868]: Performance test finished
+[06:32:19.368][I][direct_display:096]: submit count 53 avg 0.14 ms max 0.37 ms
+[06:32:29.368][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:32:39.376][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:32:49.413][I][direct_display:096]: submit count 1 avg 0.12 ms max 0.12 ms
+[06:32:59.428][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:33:09.369][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:33:19.370][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:33:29.400][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:33:39.395][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:33:49.371][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:33:59.371][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:34:09.371][I][direct_display:096]: submit count 1 avg 0.21 ms max 0.21 ms
+[06:34:19.371][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:34:29.371][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:34:39.402][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:34:49.372][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:34:59.475][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:35:09.372][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:35:19.374][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:35:29.373][I][direct_display:096]: submit count 1 avg 0.21 ms max 0.21 ms
+[06:35:39.374][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:35:49.444][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:35:59.376][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:36:09.377][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:36:19.374][I][direct_display:096]: submit count 1 avg 0.20 ms max 0.20 ms
+[06:36:29.379][I][direct_display:096]: submit count 1 avg 0.22 ms max 0.22 ms
+[06:36:39.414][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:36:49.396][I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+[06:36:59.376][I][direct_display:096]: submit count 1 avg 0.21 ms max 0.21 ms
+[06:37:09.378][I][direct_display:096]: submit count 1 avg 0.23 ms max 0.23 ms
+[06:37:19.377][I][direct_display:096]: submit count 1 avg 0.19 ms max 0.19 ms

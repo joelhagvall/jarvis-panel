@@ -1,0 +1,47 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.67 [I][app:060]: Running through setup()
+   1.99 [I][esp-idf:000]: E (403) H_API: ESP-Hosted link not yet up
+   4.89 [W][component:290]: api set Warning flag: waiting for client connection
+   4.94 [I][direct_display:109]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   4.94 [I][bench:059]: Measuring LVGL rendering
+   4.94 [I][app:117]: setup() finished successfully!
+   4.94 [I][direct_display:112]: submit count 0 avg 0.00 ms max 0.00 ms
+   4.94 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.94 [W][component:290]: wifi set Warning flag: associating to network
+   4.99 [W][component:419]: lvgl took a long time for an operation (68 ms), max is 50 ms
+   4.99 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 08:23:35 +0200
+   4.99 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.10 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.15 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.26 [W][component:419]: online_image.image took a long time for an operation (61 ms), max is 50 ms
+   9.26 [W][component:313]: wifi cleared Warning flag
+   9.42 [W][component:419]: online_image.image took a long time for an operation (85 ms), max is 70 ms
+  12.48 [W][component:419]: online_image.image took a long time for an operation (62 ms), max is 50 ms
+  12.69 [W][component:419]: online_image.image took a long time for an operation (82 ms), max is 70 ms
+  14.94 [I][direct_display:112]: submit count 3 avg 0.18 ms max 0.23 ms
+  15.89 [W][component:419]: online_image.image took a long time for an operation (187 ms), max is 50 ms
+  17.74 [W][component:419]: online_image.image took a long time for an operation (203 ms), max is 190 ms
+  18.01 [W][component:419]: online_image.image took a long time for an operation (248 ms), max is 210 ms
+  19.82 [I][packed_orb:065]: Loaded 143 compressed frames in 1529 ms; retained 4305012 bytes
+  19.82 [I][packed_orb:042]: Installed 143 lossless LZ4 frames; decoded image cache disabled
+  19.82 [I][main:1892]: Ready sound
+  24.95 [I][direct_display:112]: submit count 1 avg 0.22 ms max 0.22 ms
+  32.17 [W][component:419]: lvgl took a long time for an operation (111 ms), max is 70 ms
+  34.83 [W][component:313]: api cleared Warning flag
+  34.94 [I][direct_display:112]: submit count 28 avg 0.11 ms max 0.34 ms
+  44.93 [I][direct_display:112]: submit count 13 avg 0.13 ms max 0.25 ms
+  53.01 [W][component:419]: lvgl took a long time for an operation (121 ms), max is 120 ms
+  54.94 [I][direct_display:112]: submit count 8 avg 0.14 ms max 0.42 ms
+  61.64 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  64.95 [I][direct_display:112]: submit count 5 avg 0.09 ms max 0.22 ms
+  72.76 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 08:23:35 +0200
+  72.76 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  74.96 [I][direct_display:112]: submit count 1 avg 0.16 ms max 0.16 ms
+  76.30 [I][bench:2443]: Performance test started
+  78.29 [I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB
+  80.33 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 59.3 ms, max 59.3 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB
+  82.31 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.1 ms, max 46.1 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB
+  84.34 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.8 ms, max 21.8 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB
+  84.93 [I][direct_display:112]: submit count 18 avg 0.14 ms max 0.35 ms
+  86.31 [I][bench:067]: page_orb | redraws/s 24.8 | render avg 17.3 ms, max 57.0 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB
+  88.34 [I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 64.7 ms, max 64.7 ms | PSRAM free 18898 kB (lowest 16409 kB) | internal free 306 kB

@@ -1,0 +1,22 @@
+# The real panel: voice-board.yaml (made by board.py --voice) with the Wi-Fi and API key from secrets.yaml.
+packages:
+  board: !include voice-board.yaml
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  # One known network: connect at once instead of scanning first (saved about 3 s at boot).
+  fast_connect: true
+
+api:
+  encryption:
+    key: !secret api_key
+
+# A separate credential for the local screenshot/touch interface; never reuse the HA API key.
+panel_debug:
+  token: !secret panel_debug_token
+
+# Only someone with the password can flash the panel over Wi-Fi (before 2026-10-23 anyone on the network could).
+ota:
+  - id: !extend ota_main
+    password: !secret ota_password

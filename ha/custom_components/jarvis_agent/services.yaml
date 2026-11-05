@@ -1,0 +1,47 @@
+warm:
+clear:
+wakeup_preview:
+wakeup_snooze:
+wakeup_stop:
+media_control:
+  fields:
+    action:
+      required: true
+      selector:
+        select:
+          options: [toggle, stop, next, previous]
+speaker_volume:
+  fields:
+    level:
+      selector:
+        number: {min: 0, max: 100, unit_of_measurement: "%"}
+    step:
+      selector:
+        number: {min: -100, max: 100}
+timer_start:
+  fields:
+    minutes:
+      required: true
+      selector:
+        number: {min: 1, max: 180, unit_of_measurement: min}
+timer_cancel:
+  fields:
+    timer_id:
+      selector:
+        text:
+timer_add:
+  fields:
+    timer_id:
+      required: true
+      selector:
+        text:
+    seconds:
+      required: true
+      selector:
+        number: {min: 1, max: 3600, unit_of_measurement: s}
+reminder_cancel:
+  fields:
+    id:
+      required: true
+      selector:
+        number: {min: 1, mode: box}

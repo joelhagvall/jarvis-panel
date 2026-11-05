@@ -1,0 +1,15 @@
+[Unit]
+Description=Hallpanel physical smoke only after five minutes without touch
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/hallpanel
+ExecStart=%h/hallpanel/.venv/bin/python %h/hallpanel/tools/panel_scheduled_smoke.py --out %h/.local/state/hallpanel/smoke
+TimeoutStartSec=120
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=%h/.local/state/hallpanel %h/hallpanel/.panel-ci/locks

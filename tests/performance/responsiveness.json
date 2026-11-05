@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "frame_budget_ms": 50,
+  "minimum_fps": 22,
+  "minimum_samples": {
+    "navigation.remote_press_ms": 20,
+    "navigation.remote_release_ms": 20,
+    "animation.refresh_work_ms": 200,
+    "animation.refresh_interval_ms": 200,
+    "status_main_us": 20,
+    "status_worker_us": 20,
+    "status_radio_us": 20,
+    "status_main_heap_us": 20
+  },
+  "limits": {
+    "navigation.remote_press_ms": {"p95": 100, "max": 250},
+    "navigation.remote_release_ms": {"p95": 120, "max": 250},
+    "animation.refresh_work_ms": {"p95": 30, "max": 100},
+    "animation.refresh_interval_ms": {"p95": 50, "max": 100},
+    "animation.jank_percent": {"max": 5},
+    "navigation.command_roundtrip_ms": {"p95": 750},
+    "status_main_us": {"p95": 5000, "max": 10000}
+  },
+  "regressions": {
+    "navigation.remote_release_ms": {"statistic": "p95", "relative": 0.2, "absolute": 5},
+    "navigation.remote_press_ms": {"statistic": "p95", "relative": 0.2, "absolute": 5},
+    "animation.refresh_work_ms": {"statistic": "p95", "relative": 0.15, "absolute": 2},
+    "animation.refresh_interval_ms": {"statistic": "p95", "relative": 0.1, "absolute": 3},
+    "animation.jank_percent": {"statistic": "max", "relative": 0, "absolute": 1},
+    "navigation.command_roundtrip_ms": {"statistic": "p95", "relative": 0.25, "absolute": 50},
+    "status_roundtrip_ms": {"statistic": "p95", "relative": 0.25, "absolute": 50},
+    "animation.fps": {"statistic": "median", "direction": "lower", "relative": 0.1, "absolute": 1}
+  }
+}

@@ -1,0 +1,23 @@
+# systemd user service on Jarvis. tools/deploy_jarvis.sh installs it, and writes
+# ~/.config/hallpanel/server.env (mode 600) with HALLPANEL_TOKEN and the agent settings.
+# It listens on 127.0.0.1 only: Home Assistant's Jarvis integration is its only client.
+# It runs in ~/hallpanel-live/venv (Jarvis's python3 with server/requirements.txt), which the deploy makes.
+[Unit]
+Description=Hallway panel server (Jarvis agent, voice, chat history) for Home Assistant
+After=network-online.target
+
+[Service]
+EnvironmentFile=%h/.config/hallpanel/server.env
+# 2026-11-02 review: the unit ran without any hardening. /etc, /usr and /boot stay read-only; everything
+# the server writes is in $HOME or $HOME's state dirs, and it never needs another privilege.
+# Tried on Jarvis 2026-11-02 (systemd 257, user manager): a transient unit with these three starts, /usr is
+# read-only (EROFS), $HOME/.local/state is writable; root-owned files show as nobody (implied PrivateUsers).
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStart=%h/hallpanel-live/venv/bin/python3 %h/hallpanel-live/server/hallpanel_server.py --bind 127.0.0.1 --port 8765 --assets %h/hallpanel-live/server/www --db %h/.local/share/hallpanel/history.db
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Sample Hallpanel health every five minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+RandomizedDelaySec=20s
+Persistent=false
+Unit=hallpanel-health.service
+
+[Install]
+WantedBy=timers.target

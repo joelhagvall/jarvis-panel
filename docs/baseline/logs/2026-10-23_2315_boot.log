@@ -1,0 +1,21 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.88 [I][app:060]: Running through setup()
+   2.20 [I][esp-idf:000]: E (396) H_API: ESP-Hosted link not yet up
+   5.09 [W][component:290]: api set Warning flag: waiting for client connection
+   5.09 [I][bench:045]: Measuring LVGL rendering
+   5.09 [I][app:117]: setup() finished successfully!
+   5.09 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   5.14 [W][component:290]: wifi set Warning flag: associating to network
+   5.20 [W][component:419]: lvgl took a long time for an operation (81 ms), max is 50 ms
+   5.20 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 23:11:57 +0200
+   5.20 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.25 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.34 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.45 [W][component:313]: wifi cleared Warning flag
+  10.42 [W][component:313]: api cleared Warning flag
+  11.12 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 50 ms
+  12.61 [I][main:1816]: Ready sound skipped: night
+  12.88 [W][component:419]: online_image.image took a long time for an operation (90 ms), max is 50 ms
+  19.57 [I][orb_atlas:076]: RGB565 atlas unpacked in 3330 ms
+  20.25 [I][orb_atlas:067]: Installed 143 frames without copying pixels
+  61.82 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter

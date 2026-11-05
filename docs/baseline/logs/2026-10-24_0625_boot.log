@@ -1,0 +1,35 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.84 [I][app:060]: Running through setup()
+   2.15 [I][esp-idf:000]: E (410) H_API: ESP-Hosted link not yet up
+   5.09 [W][component:290]: api set Warning flag: waiting for client connection
+   5.14 [I][direct_display:093]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   5.14 [I][bench:059]: Measuring LVGL rendering
+   5.14 [I][app:117]: setup() finished successfully!
+   5.14 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+   5.14 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   5.14 [W][component:290]: wifi set Warning flag: associating to network
+   5.19 [W][component:419]: lvgl took a long time for an operation (73 ms), max is 50 ms
+   5.19 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 06:21:21 +0200
+   5.19 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.24 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.35 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.46 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+   9.46 [W][component:313]: wifi cleared Warning flag
+   9.61 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  12.77 [I][main:1847]: Ready sound
+  12.82 [W][component:419]: online_image.image took a long time for an operation (64 ms), max is 50 ms
+  13.08 [W][component:419]: online_image.image took a long time for an operation (90 ms), max is 70 ms
+  13.34 [W][component:290]: debug set Warning flag: unspecified
+  14.31 [W][component:313]: debug cleared Warning flag
+  15.16 [I][direct_display:096]: submit count 3 avg 0.19 ms max 0.24 ms
+  17.47 [I][orb_atlas:045]: Background RGB565 atlas ready in 1225 ms
+  18.17 [I][orb_atlas:067]: Installed 143 frames without copying pixels
+  25.15 [I][direct_display:096]: submit count 2 avg 0.23 ms max 0.24 ms
+  35.14 [I][direct_display:096]: submit count 1 avg 0.12 ms max 0.12 ms
+  45.13 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+  47.69 [W][component:313]: api cleared Warning flag
+  55.17 [I][direct_display:096]: submit count 7 avg 0.15 ms max 0.26 ms
+  61.82 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  65.13 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+  75.17 [I][direct_display:096]: submit count 2 avg 0.21 ms max 0.21 ms
+  85.14 [I][direct_display:096]: submit count 1 avg 0.19 ms max 0.19 ms

@@ -1,0 +1,33 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.69 [I][app:060]: Running through setup()
+   2.13 [I][esp-idf:000]: E (508) H_API: ESP-Hosted link not yet up
+   3.93 [W][component:290]: api set Warning flag: waiting for client connection
+   3.93 [I][direct_display:135]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   3.99 [I][bench:098]: Measuring LVGL rendering
+   3.99 [I][app:117]: setup() finished successfully!
+   3.99 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   3.99 [W][component:290]: wifi set Warning flag: associating to network
+   4.04 [W][component:419]: lvgl took a long time for an operation (53 ms), max is 50 ms
+   4.04 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-25 21:13:02 +0100
+   4.04 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   4.04 [W][component:313]: sound_level.sensor cleared Warning flag
+   6.50 [I][direct_display:138]: submit count 1 avg 0.08 ms max 0.08 ms
+   8.10 [W][component:419]: wifi took a long time for an operation (189 ms), max is 50 ms
+   8.15 [W][component:313]: wifi cleared Warning flag
+   8.90 [W][component:313]: api cleared Warning flag
+   9.17 [W][component:290]: debug set Warning flag: unspecified
+  10.18 [W][component:313]: debug cleared Warning flag
+  10.45 [W][component:419]: a scheduled task took a long time for an operation (176 ms), max is 50 ms
+  11.62 [I][packed_orb:065]: Loaded 199 compressed frames in 3524 ms; retained 5776072 bytes
+  11.67 [I][packed_orb:191]: Installed 199 original and 679 virtual frames, one per display frame when the frame clock is live; image cache disabled
+  12.53 [W][component:419]: a scheduled task took a long time for an operation (62 ms), max is 50 ms
+  14.38 [I][main:2040]: Ready sound
+  16.53 [I][direct_display:138]: submit count 13 avg 0.10 ms max 0.21 ms
+  26.51 [I][direct_display:138]: submit count 0 avg 0.00 ms max 0.00 ms
+  36.52 [I][direct_display:138]: submit count 2 avg 0.11 ms max 0.16 ms
+  46.53 [I][direct_display:138]: submit count 1 avg 0.07 ms max 0.07 ms
+  56.50 [I][direct_display:138]: submit count 0 avg 0.00 ms max 0.00 ms
+  61.65 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  66.52 [I][direct_display:138]: submit count 1 avg 0.06 ms max 0.06 ms
+  76.53 [I][direct_display:138]: submit count 0 avg 0.00 ms max 0.00 ms
+  86.53 [I][direct_display:138]: submit count 0 avg 0.00 ms max 0.00 ms

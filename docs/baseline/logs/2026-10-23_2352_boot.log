@@ -1,0 +1,50 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.86 [I][app:060]: Running through setup()
+   2.19 [I][esp-idf:000]: E (409) H_API: ESP-Hosted link not yet up
+   5.09 [W][component:290]: api set Warning flag: waiting for client connection
+   5.14 [I][direct_display:076]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   5.14 [I][bench:045]: Measuring LVGL rendering
+   5.14 [I][app:117]: setup() finished successfully!
+   5.14 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   5.14 [W][component:290]: wifi set Warning flag: associating to network
+   5.25 [W][component:419]: lvgl took a long time for an operation (89 ms), max is 50 ms
+   5.25 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 23:47:21 +0200
+   5.25 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.31 [W][component:313]: sound_level.sensor cleared Warning flag
+   6.35 [I][direct_display:079]: present count 1 avg 16.36 ms max 16.36 ms
+   9.82 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.88 [W][component:313]: wifi cleared Warning flag
+  11.68 [W][component:419]: online_image.image took a long time for an operation (93 ms), max is 50 ms
+  11.78 [W][component:313]: api cleared Warning flag
+  13.39 [I][main:1841]: Ready sound skipped: night
+  13.73 [W][component:419]: online_image.image took a long time for an operation (91 ms), max is 50 ms
+  16.38 [I][direct_display:079]: present count 16 avg 11.27 ms max 16.48 ms
+  18.16 [I][orb_atlas:045]: Background RGB565 atlas ready in 1274 ms
+  18.90 [I][orb_atlas:067]: Installed 143 frames without copying pixels
+  26.35 [I][direct_display:079]: present count 2 avg 8.30 ms max 11.85 ms
+  36.35 [I][direct_display:079]: present count 1 avg 14.40 ms max 14.40 ms
+  46.40 [I][direct_display:079]: present count 0 avg 0.00 ms max 0.00 ms
+  52.69 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 23:47:21 +0200
+  52.74 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  55.12 [I][bench:2373]: Performance test started
+  56.40 [I][direct_display:079]: present count 3 avg 11.68 ms max 15.01 ms
+  57.15 [I][bench:053]: page_glass_v2 | redraws/s 1.5 | render avg 57.3 ms, max 75.9 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  59.15 [I][bench:053]: page_hemmet | redraws/s 1.0 | render avg 51.5 ms, max 73.7 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  61.19 [I][bench:053]: page_tavla | redraws/s 1.0 | render avg 66.6 ms, max 77.5 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  61.78 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  63.19 [I][bench:053]: page_natt | redraws/s 9.0 | render avg 23.4 ms, max 72.4 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  65.18 [I][bench:053]: page_orb | redraws/s 24.5 | render avg 16.0 ms, max 59.3 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  66.38 [I][direct_display:079]: present count 73 avg 8.53 ms max 16.16 ms
+  67.19 [I][bench:053]: page_glass_v2 | redraws/s 4.5 | render avg 23.9 ms, max 64.4 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  69.17 [I][bench:053]: page_hemmet | redraws/s 12.0 | render avg 20.0 ms, max 64.4 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  71.16 [I][bench:053]: page_tavla | redraws/s 3.0 | render avg 26.4 ms, max 64.0 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  73.20 [I][bench:053]: page_natt | redraws/s 4.5 | render avg 25.3 ms, max 70.0 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  75.15 [I][bench:053]: page_orb | redraws/s 4.0 | render avg 28.1 ms, max 69.9 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  76.38 [I][direct_display:079]: present count 52 avg 10.09 ms max 14.98 ms
+  77.19 [I][bench:053]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  79.17 [I][bench:053]: page_hemmet | redraws/s 0.5 | render avg 75.6 ms, max 75.6 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  81.21 [I][bench:053]: page_tavla | redraws/s 0.5 | render avg 61.1 ms, max 61.1 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  83.20 [I][bench:053]: page_natt | redraws/s 0.5 | render avg 38.1 ms, max 38.1 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  85.19 [I][bench:053]: page_orb | redraws/s 25.0 | render avg 16.0 ms, max 56.5 ms | PSRAM free 9372 kB (lowest 9362 kB) | internal free 326 kB
+  85.19 [I][bench:2781]: Performance test finished
+  86.39 [I][direct_display:079]: present count 54 avg 8.06 ms max 16.41 ms

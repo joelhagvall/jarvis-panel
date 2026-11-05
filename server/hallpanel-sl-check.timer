@@ -1,0 +1,10 @@
+[Unit]
+Description=Hallway panel: SL metro card health check every 5 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+RandomizedDelaySec=20s
+
+[Install]
+WantedBy=timers.target

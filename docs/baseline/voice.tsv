@@ -1,0 +1,5 @@
+date	commit	note	how	wake_to_chime_s	recognised_to_first_sound_s	reply_played_s	end_to_wake_again_s	question	reply	log
+2026-10-23T20:36	4505a76+dirty	first voice and tap session: Joel talks and taps every page	wake word	0.69	0.88	2.03	0.05	[speech removed]	[speech removed]	logs/2026-10-23_2036_measure.log
+2026-10-23T20:36	4505a76+dirty	first voice and tap session: Joel talks and taps every page	wake word	0.23	4.79	12.54	0.04	[speech removed]	[speech removed]	logs/2026-10-23_2036_measure.log
+2026-10-23T20:36	4505a76+dirty	first voice and tap session: Joel talks and taps every page	wake word	0.7	5.02	1.98	0.02	[speech removed]	[speech removed]	logs/2026-10-23_2036_measure.log
+2026-10-23T20:36	4505a76+dirty	first voice and tap session: Joel talks and taps every page	tap	0.46	4.85	13.11	0.05	[speech removed]	[speech removed]	logs/2026-10-23_2036_measure.log

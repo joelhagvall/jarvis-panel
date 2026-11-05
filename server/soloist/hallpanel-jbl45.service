@@ -1,0 +1,12 @@
+[Unit]
+Description=JBL 45 varv: the pitch filter for the panel turntable's 45 rpm (jbl45.conf)
+After=pipewire.service wireplumber.service
+Wants=pipewire.service
+
+[Service]
+ExecStart=/usr/bin/pipewire -c %h/hallpanel-live/server/soloist/jbl45.conf
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

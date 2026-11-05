@@ -1,0 +1,464 @@
+{
+  "version": 6,
+  "size": [
+    1024,
+    600
+  ],
+  "channel_tolerance": 8,
+  "max_changed_pixels": 8,
+  "geometry_tolerance": 0,
+  "scenes": {
+    "dashboard": {
+      "page": "page_glass_v2",
+      "paths": [
+        "screen",
+        "screen/4",
+        "screen/5",
+        "screen/6",
+        "screen/7",
+        "top/0/1",
+        "top/0/1/0",
+        "top/0/1/1",
+        "top/0/1/2",
+        "top/0/1/3",
+        "top/0/1/4",
+        "top/0/1/5",
+        "top/0/2"
+      ],
+      "labels": [
+        "Kungsholmen",
+        "Stadshagen",
+        "Jarvis",
+        "Rensa",
+        "G\u00e5 hemifr\u00e5n",
+        "Hemmet",
+        "Spelas nu",
+        "Tavla",
+        "Natt"
+      ],
+      "dynamic_text": {
+        "screen/5/0": {
+          "values": [
+            "IDAG",
+            "I MORGON",
+            "KOMMANDE"
+          ],
+          "max_width": 198
+        },
+        "screen/6/2": {
+          "values": [
+            "3 min att g\u00e5",
+            "Inga avg\u00e5ngar"
+          ],
+          "max_width": 120,
+          "anchor": "right"
+        }
+      }
+    },
+    "settings_dashboard": {
+      "page": "page_glass_v2",
+      "subtree": "top/1",
+      "dynamic_paths": [
+        "top/1/0/1/2",
+        "top/1/0/2/2",
+        "top/1/0/3/2",
+        "top/1/0/4/2"
+      ],
+      "pixels": {
+        "include": [
+          193,
+          45,
+          831,
+          507
+        ],
+        "radius": 27,
+        "exclude": [
+          [
+            735,
+            112,
+            812,
+            143
+          ],
+          [
+            735,
+            182,
+            812,
+            213
+          ],
+          [
+            735,
+            252,
+            812,
+            283
+          ],
+          [
+            218,
+            144,
+            808,
+            182
+          ],
+          [
+            218,
+            214,
+            808,
+            252
+          ],
+          [
+            218,
+            284,
+            808,
+            322
+          ],
+          [
+            744,
+            327,
+            811,
+            371
+          ],
+          [
+            253,
+            347,
+            445,
+            372
+          ],
+          [
+            596,
+            386,
+            768,
+            420
+          ],
+          [
+            596,
+            440,
+            768,
+            474
+          ]
+        ]
+      }
+    },
+    "hemmet": {
+      "page": "page_hemmet",
+      "paths": [
+        "screen",
+        "screen/4",
+        "screen/5",
+        "screen/6",
+        "screen/7",
+        "top/0/1",
+        "top/0/1/0",
+        "top/0/1/1",
+        "top/0/1/2",
+        "top/0/1/3",
+        "top/0/1/4",
+        "top/0/1/5",
+        "top/0/2"
+      ],
+      "labels": [
+        "Hemmet",
+        "Inne",
+        "Luftrenaren",
+        "Larm",
+        "Brandvarnaren",
+        "Vattenlarmet",
+        "P\u00e5minnelser och timers",
+        "Tv\u00e4tt, sol och m\u00e5ne",
+        "N\u00e4sta tv\u00e4ttid",
+        "Dagsljus",
+        "M\u00e5nen",
+        "G\u00e5 hemifr\u00e5n",
+        "Spelas nu",
+        "Tavla",
+        "Natt"
+      ]
+    },
+    "settings_hemmet": {
+      "page": "page_hemmet",
+      "subtree": "top/1",
+      "dynamic_paths": [
+        "top/1/0/1/2",
+        "top/1/0/2/2",
+        "top/1/0/3/2",
+        "top/1/0/4/2"
+      ],
+      "pixels": {
+        "include": [
+          193,
+          45,
+          831,
+          507
+        ],
+        "radius": 27,
+        "exclude": [
+          [
+            735,
+            112,
+            812,
+            143
+          ],
+          [
+            735,
+            182,
+            812,
+            213
+          ],
+          [
+            735,
+            252,
+            812,
+            283
+          ],
+          [
+            218,
+            144,
+            808,
+            182
+          ],
+          [
+            218,
+            214,
+            808,
+            252
+          ],
+          [
+            218,
+            284,
+            808,
+            322
+          ],
+          [
+            744,
+            327,
+            811,
+            371
+          ],
+          [
+            253,
+            347,
+            445,
+            372
+          ],
+          [
+            596,
+            386,
+            768,
+            420
+          ],
+          [
+            596,
+            440,
+            768,
+            474
+          ]
+        ]
+      }
+    },
+    "tavla": {
+      "page": "page_tavla",
+      "paths": [
+        "screen",
+        "screen/0",
+        "screen/2"
+      ],
+      "dynamic_width": {
+        "screen/2": {
+          "max_width": 968
+        }
+      }
+    },
+    "night": {
+      "page": "page_natt",
+      "test_mode": "night",
+      "paths": [
+        "screen",
+        "screen/5"
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": [
+          [
+            0,
+            100,
+            1024,
+            480
+          ]
+        ]
+      }
+    },
+    "voice_listening": {
+      "page": "page_orb",
+      "test_mode": "listening",
+      "paths": [
+        "screen",
+        "screen/1",
+        "screen/6",
+        "screen/7"
+      ],
+      "labels": [
+        "Jag lyssnar\u2026"
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": []
+      }
+    },
+    "voice_thinking": {
+      "page": "page_orb",
+      "test_mode": "thinking",
+      "paths": [
+        "screen",
+        "screen/2",
+        "screen/6",
+        "screen/7"
+      ],
+      "labels": [
+        "Test av Hallpanel"
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": []
+      }
+    },
+    "voice_speaking": {
+      "page": "page_orb",
+      "test_mode": "speaking",
+      "paths": [
+        "screen",
+        "screen/4",
+        "screen/6",
+        "screen/7"
+      ],
+      "labels": [
+        "Test av Hallpanel",
+        "Det h\u00e4r \u00e4r ett lokalt test utan ljud eller modell."
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": []
+      }
+    },
+    "voice_api_timeout": {
+      "page": "page_orb",
+      "test_mode": "api_timeout",
+      "paths": [
+        "screen",
+        "screen/1",
+        "screen/6",
+        "screen/7"
+      ],
+      "labels": [
+        "Test av Hallpanel",
+        "Det gick inte just nu."
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": []
+      }
+    },
+    "ota": {
+      "page": "page_ota",
+      "test_mode": "ota",
+      "paths": [
+        "screen",
+        "screen/1",
+        "screen/2",
+        "screen/3"
+      ],
+      "labels": [
+        "Jarvis uppdaterar sig",
+        "Dra inte ur sladden"
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": []
+      }
+    },
+    "wifi_disconnected": {
+      "page": "page_glass_v2",
+      "test_mode": "wifi_disconnected",
+      "paths": [
+        "screen"
+      ],
+      "labels": [
+        "N\u00e4tet \u00e4r nere \u2013 timers och larm fungerar"
+      ]
+    },
+    "ha_disconnected": {
+      "page": "page_glass_v2",
+      "test_mode": "ha_disconnected",
+      "paths": [
+        "screen"
+      ],
+      "labels": [
+        "Ingen kontakt med Jarvis"
+      ]
+    },
+    "missing_image": {
+      "page": "page_tavla",
+      "test_mode": "missing_image",
+      "paths": [
+        "screen",
+        "screen/2"
+      ],
+      "pixels": {
+        "include": [
+          0,
+          0,
+          1024,
+          600
+        ],
+        "radius": 0,
+        "exclude": [
+          [
+            0,
+            440,
+            700,
+            600
+          ]
+        ]
+      },
+      "dynamic_width": {
+        "screen/2": {
+          "max_width": 968
+        }
+      }
+    }
+  },
+  "settle_ms": 250,
+  "stability_ms": 150
+}

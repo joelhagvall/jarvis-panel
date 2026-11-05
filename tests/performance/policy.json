@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "required": ["uptime_ms", "internal_free", "psram_free"],
+  "minimum": {"internal_free": 98304, "psram_free": 4194304},
+  "maximum": {"screenshot_latency_ms": 4000},
+  "max_drop_bytes": {"internal_free": 65536, "psram_free": 262144},
+  "workloads": {
+    "animation": {
+      "required": ["redraws_per_s", "render_avg_ms"],
+      "minimum": {"redraws_per_s": 1}
+    }
+  },
+  "regressions": {
+    "internal_free": {"direction": "lower", "relative": 0.1, "absolute": 32768},
+    "psram_free": {"direction": "lower", "relative": 0.05, "absolute": 262144},
+    "screenshot_latency_ms": {"direction": "higher", "relative": 0.35, "absolute": 150, "statistic": "p95"},
+    "screenshot_copy_us": {"direction": "higher", "relative": 0.35, "absolute": 2000, "statistic": "p95"},
+    "redraws_per_s": {"direction": "lower", "relative": 0.15, "absolute": 1},
+    "render_avg_ms": {"direction": "higher", "relative": 0.25, "absolute": 2},
+    "render_max_ms": {"direction": "higher", "relative": 0.3, "absolute": 5, "statistic": "max"},
+    "touch_refresh_p95_ms": {"direction": "higher", "relative": 0.3, "absolute": 5, "statistic": "p95"},
+    "boot_ready_ms": {"direction": "higher", "relative": 0.15, "absolute": 1000}
+  },
+  "monitor": {
+    "failure_streak": 3,
+    "leak_samples": 12,
+    "low_memory_samples": 3,
+    "leak_min_seconds": 1800,
+    "leak_drop_bytes": {"internal_free": 65536, "psram_free": 524288}
+  }
+}

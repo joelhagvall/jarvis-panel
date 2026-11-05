@@ -1,0 +1,18 @@
+[Unit]
+Description=One passive Hallpanel health sample (no touch or OTA)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/hallpanel
+ExecStart=%h/hallpanel/.venv/bin/python %h/hallpanel/tools/panel_metrics.py monitor --once --history %h/.local/state/hallpanel/health.json --keep 4032
+TimeoutStartSec=30
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=%h/.local/state/hallpanel
+
+[Install]
+WantedBy=default.target

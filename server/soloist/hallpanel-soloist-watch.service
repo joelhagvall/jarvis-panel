@@ -1,0 +1,6 @@
+[Unit]
+Description=Restart Spotify Soloist when it plays but no sound reaches the JBL (watch.py)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/hallpanel-live/server/soloist/watch.py

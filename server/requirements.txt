@@ -1,0 +1,10 @@
+# The server and the luna/groq brains use the standard library only. These are for the anthropic brain
+# (server/agents/anthropic_agent.py), the daily NASA background (server/apod.py, which bakes with numpy and
+# Pillow) and Piper, the voice when Home Assistant Cloud cannot be reached (server/voice.py; the voice file
+# itself is downloaded by the deploy), and the ISS's visible passes (server/agents/lookup.py, sgp4).
+# tools/deploy_jarvis.sh installs them in ~/hallpanel-live/venv on Jarvis.
+anthropic==2.0.0
+sgp4==2.27
+numpy==2.5.4
+pillow==13.0.0
+piper-tts==1.8.0

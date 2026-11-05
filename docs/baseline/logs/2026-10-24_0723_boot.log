@@ -1,0 +1,351 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.64 [I][app:060]: Running through setup()
+   1.96 [I][esp-idf:000]: E (415) H_API: ESP-Hosted link not yet up
+   4.84 [W][component:290]: api set Warning flag: waiting for client connection
+   4.89 [I][direct_display:093]: Double-buffer DIRECT rendering installed (1024x600 RGB565)
+   4.89 [I][bench:059]: Measuring LVGL rendering
+   4.89 [I][app:117]: setup() finished successfully!
+   4.89 [I][direct_display:096]: submit count 0 avg 0.00 ms max 0.00 ms
+   4.89 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.89 [W][component:290]: wifi set Warning flag: associating to network
+   4.99 [W][component:419]: lvgl took a long time for an operation (74 ms), max is 50 ms
+   4.99 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 07:17:54 +0200
+   4.99 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   5.05 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.08 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.19 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+   9.19 [W][component:313]: api cleared Warning flag
+   9.19 [W][component:313]: wifi cleared Warning flag
+   9.35 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  12.11 [W][component:419]: online_image.image took a long time for an operation (65 ms), max is 50 ms
+  12.38 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 70 ms
+  14.91 [I][direct_display:096]: submit count 17 avg 0.14 ms max 0.24 ms
+  15.77 [W][component:419]: online_image.image took a long time for an operation (203 ms), max is 50 ms
+  17.80 [W][component:419]: online_image.image took a long time for an operation (222 ms), max is 210 ms
+  18.07 [W][component:419]: online_image.image took a long time for an operation (271 ms), max is 230 ms
+  20.04 [I][packed_orb:065]: Loaded 143 compressed frames in 1614 ms; retained 4305012 bytes
+  20.04 [I][packed_orb:038]: Installed 143 lossless LZ4 frames; decoded image cache disabled
+  20.04 [I][main:1875]: Ready sound
+  24.95 [I][direct_display:096]: submit count 2 avg 0.20 ms max 0.29 ms
+  34.95 [I][direct_display:096]: submit count 1 avg 0.16 ms max 0.16 ms
+  36.34 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-24 07:17:54 +0200
+  36.34 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+  38.44 [I][bench:2426]: Performance test started
+  40.49 [I][bench:067]: page_glass_v2 | redraws/s 0.0 | render avg 0.0 ms, max 0.0 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  42.46 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 62.0 ms, max 62.0 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  44.44 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 46.4 ms, max 46.4 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  44.92 [I][direct_display:096]: submit count 4 avg 0.31 ms max 0.47 ms
+  46.47 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.3 ms, max 21.3 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  46.52 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.52 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.57 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.57 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.57 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.57 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.62 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.62 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.67 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.67 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.67 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.67 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.73 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.73 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.78 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.78 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.83 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.83 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.89 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.89 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.94 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.94 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  46.99 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  46.99 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.04 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.04 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.09 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.09 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.09 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.09 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.15 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.15 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.20 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.20 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.25 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.25 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.25 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.25 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.31 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.31 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.36 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.36 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.41 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.41 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.41 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.41 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.47 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.47 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.52 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.52 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.57 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.57 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.57 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.57 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.63 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.63 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.68 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.68 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.73 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.73 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.73 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.73 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.78 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.78 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.84 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.84 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.89 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.94 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  47.94 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  47.94 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.00 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.00 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.05 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.05 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.10 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.10 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.10 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.10 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.16 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.16 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.21 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.21 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.26 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.26 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.31 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.31 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.31 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.31 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.37 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.37 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.42 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.42 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.48 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  48.48 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  48.48 [I][bench:067]: page_orb | redraws/s 24.5 | render avg 6.9 ms, max 44.8 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  50.46 [I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 63.9 ms, max 63.9 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  52.48 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.8 ms, max 61.8 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  54.46 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 45.2 ms, max 45.2 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  54.94 [I][direct_display:096]: submit count 53 avg 0.11 ms max 0.49 ms
+  56.50 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.4 ms, max 21.4 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  56.55 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.55 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.60 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.60 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.60 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.60 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.60 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.60 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.65 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.65 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.70 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.70 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.70 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.70 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.76 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.76 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.81 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.81 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.86 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.86 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.91 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.91 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.96 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.96 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  56.96 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  56.96 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.02 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.02 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.07 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.07 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.12 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.12 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.17 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.17 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.17 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.17 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.23 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.23 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.28 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.28 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.33 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.33 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.33 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.33 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.38 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.38 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.44 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.44 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.49 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.49 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.54 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.54 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.54 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.54 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.60 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.60 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.65 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.65 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.65 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.65 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.70 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.70 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.76 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.76 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.81 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.81 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.86 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.86 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.86 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.86 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.91 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.91 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  57.97 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  57.97 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.02 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.02 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.02 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.02 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.07 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.07 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.12 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.12 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.18 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.18 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.18 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.18 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.23 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.23 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.28 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.28 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.33 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.33 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.38 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.38 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.38 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.38 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.44 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  58.44 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  58.49 [I][bench:067]: page_orb | redraws/s 24.5 | render avg 7.0 ms, max 46.3 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  60.48 [I][bench:067]: page_glass_v2 | redraws/s 0.5 | render avg 65.4 ms, max 65.4 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  61.56 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
+  62.46 [I][bench:067]: page_hemmet | redraws/s 0.5 | render avg 61.8 ms, max 61.8 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  64.49 [I][bench:067]: page_tavla | redraws/s 0.5 | render avg 45.8 ms, max 45.8 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  64.91 [I][direct_display:096]: submit count 53 avg 0.10 ms max 0.39 ms
+  66.46 [I][bench:067]: page_natt | redraws/s 0.5 | render avg 21.8 ms, max 21.8 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  66.52 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.52 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.57 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.57 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.62 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.62 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.62 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.62 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.68 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.68 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.73 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.73 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.78 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.78 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.84 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.84 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.84 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.84 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.89 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.89 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.89 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.94 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.94 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.99 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.99 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  66.99 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  66.99 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.05 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.05 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.10 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.10 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.15 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.15 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.20 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.20 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.20 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.20 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.25 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.25 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.31 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.31 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.36 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.36 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.36 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.36 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.41 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.41 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.46 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.46 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.51 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.51 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.56 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.56 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.56 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.56 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.62 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.62 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.67 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.67 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.72 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.72 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.77 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.77 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.77 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.77 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.83 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.83 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.88 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.88 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.88 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.88 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.93 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.93 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  67.98 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  67.98 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.04 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.04 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.09 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.09 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.09 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.09 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.14 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.14 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.19 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.19 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.25 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.25 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.30 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.30 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.30 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.30 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.35 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.35 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.40 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.40 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.46 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.46 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.46 [E][lvgl:000]: [Error] decode_compressed: Need LV_BIN_DECODER_RAM_LOAD to be enabled
+  68.46 [E][lvgl:000]: [Error] lv_draw_image_normal_helper: Failed to open image
+  68.51 [I][bench:067]: page_orb | redraws/s 25.0 | render avg 6.9 ms, max 45.2 ms | PSRAM free 19245 kB (lowest 18219 kB) | internal free 323 kB
+  68.51 [I][bench:2896]: Performance test finished
+  74.95 [I][direct_display:096]: submit count 51 avg 0.09 ms max 0.31 ms
+  84.93 [I][direct_display:096]: submit count 1 avg 0.12 ms max 0.12 ms

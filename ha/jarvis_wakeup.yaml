@@ -1,0 +1,150 @@
+# Included as homeassistant.packages.jarvis_wakeup. Helpers restore their values across restarts.
+# Each weekday has its own switch, time and content (wakeup.py plans()). There is no master switch:
+# a day that is on wakes. jarvis_vackning_tid and jarvis_vackning_typ are only fallbacks for a day
+# whose own helper is missing; the dashboard does not show them.
+input_boolean:
+  jarvis_vackning_engang:
+    name: Extra väckning på
+    icon: mdi:alarm-check
+  jarvis_vackning_snooze:
+    name: Snooze aktiv
+    icon: mdi:alarm-snooze
+  jarvis_vackning_mandag:
+    name: Måndag
+  jarvis_vackning_tisdag:
+    name: Tisdag
+  jarvis_vackning_onsdag:
+    name: Onsdag
+  jarvis_vackning_torsdag:
+    name: Torsdag
+  jarvis_vackning_fredag:
+    name: Fredag
+  jarvis_vackning_lordag:
+    name: Lördag
+  jarvis_vackning_sondag:
+    name: Söndag
+input_datetime:
+  jarvis_vackning_engang:
+    name: Datum och tid
+    has_date: true
+    has_time: true
+  jarvis_vackning_tid:
+    name: Reservtid
+    has_date: false
+    has_time: true
+  jarvis_vackning_mandag_tid:
+    name: Måndag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_tisdag_tid:
+    name: Tisdag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_onsdag_tid:
+    name: Onsdag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_torsdag_tid:
+    name: Torsdag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_fredag_tid:
+    name: Fredag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_lordag_tid:
+    name: Lördag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_sondag_tid:
+    name: Söndag tid
+    has_date: false
+    has_time: true
+  jarvis_vackning_snooze:
+    name: Snooze till
+    has_date: true
+    has_time: true
+input_number:
+  jarvis_vackning_volym:
+    name: Väckningsvolym
+    min: 5
+    max: 100
+    step: 5
+    mode: slider
+    unit_of_measurement: "%"
+    icon: mdi:volume-high
+# Egen väckning: Joel's own wish, written freely; Jarvis writes the wakeup from it (server/wakeup.py).
+input_text:
+  jarvis_vackning_engang_text:
+    name: Egen väckning
+    max: 255
+    mode: text
+    icon: mdi:pencil
+input_select:
+  jarvis_vackning_engang_typ:
+    name: Extra väckningens innehåll
+    options: [Vanlig morgon, Kontorsmorgon, Egen väckning]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_typ:
+    name: Reservinnehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_mandag_typ:
+    name: Måndag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_tisdag_typ:
+    name: Tisdag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_onsdag_typ:
+    name: Onsdag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_torsdag_typ:
+    name: Torsdag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_fredag_typ:
+    name: Fredag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_lordag_typ:
+    name: Lördag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  jarvis_vackning_sondag_typ:
+    name: Söndag innehåll
+    options: [Vanlig morgon, Kontorsmorgon]
+    icon: mdi:weather-sunset-up
+  # After the greeting: the radio on the Bluetooth speaker if it is on, else on the panel (wakeup.py radio_after).
+  jarvis_vackning_radio:
+    name: Radio efter väckningen
+    options: [Av, P1, P2, P3, P4 Stockholm]
+    icon: mdi:radio
+script:
+  # The dashboard's "Lägg till extra väckning": tomorrow 07:00 with Vanlig morgon, then edited in place.
+  jarvis_vackning_lagg_till_extra:
+    alias: Lägg till extra väckning
+    icon: mdi:alarm-plus
+    sequence:
+      - action: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.jarvis_vackning_engang
+        data:
+          datetime: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d') }} 07:00:00"
+      - action: input_select.select_option
+        target:
+          entity_id: input_select.jarvis_vackning_engang_typ
+        data:
+          option: Vanlig morgon
+      - action: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.jarvis_vackning_engang
+template:
+  - binary_sensor:
+      # On while a wakeup plays and in the 30 minutes after it, when Snooze and Stopp mean something.
+      - name: Jarvis väckning pågår
+        unique_id: jarvis_vackning_pagar
+        icon: mdi:alarm-light
+        state: "{{ state_attr('sensor.jarvis_nasta_vackning', 'pagar') == true }}"

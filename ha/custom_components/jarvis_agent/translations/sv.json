@@ -1,0 +1,107 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jarvis-server",
+        "description": "Hallpanelens server på den här datorn (server/hallpanel_server.py).",
+        "data": {
+          "url": "Adress",
+          "token": "Token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Når inte Jarvis-servern på den adressen.",
+      "invalid_auth": "Jarvis-servern godkände inte token."
+    },
+    "abort": {
+      "already_configured": "Den här Jarvis-servern är redan tillagd."
+    }
+  },
+  "services": {
+    "warm": {
+      "name": "Värm upp",
+      "description": "Öppnar agentens anslutningar inför en fråga. Panelen anropar den när den hör väckningsordet."
+    },
+    "wakeup_preview": {
+      "name": "Provlyssna på väckning",
+      "description": "Styr Jarvis väckning på hallpanelen."
+    },
+    "wakeup_snooze": {
+      "name": "Snooza i fem minuter",
+      "description": "Styr Jarvis väckning på hallpanelen."
+    },
+    "wakeup_stop": {
+      "name": "Stoppa väckning",
+      "description": "Styr Jarvis väckning på hallpanelen."
+    },
+    "media_control": {
+      "name": "Styr musiken",
+      "description": "Pausa, fortsätt eller stoppa musik på hallpanelen. Tal och väckningar lämnas kvar.",
+      "fields": {
+        "action": {
+          "name": "Åtgärd",
+          "description": "Pausa/fortsätt, stopp, nästa eller föregående."
+        }
+      }
+    },
+    "speaker_volume": {
+      "name": "Bluetooth-högtalarens volym",
+      "description": "Volymen på Bluetooth-högtalaren vid Jarvis, även medan den är sänkt för Jarvis.",
+      "fields": {
+        "level": {
+          "name": "Nivå",
+          "description": "Sätt den till så här många procent."
+        },
+        "step": {
+          "name": "Steg",
+          "description": "Eller flytta den så här många procentenheter."
+        }
+      }
+    },
+    "timer_start": {
+      "name": "Starta en timer på panelen",
+      "description": "Hemmets snabbtimer: Home Assistants egen timer på hallpanelen, som när du ber om den med rösten.",
+      "fields": {
+        "minutes": {
+          "name": "Minuter",
+          "description": "Hur länge timern går."
+        }
+      }
+    },
+    "timer_cancel": {
+      "name": "Avbryt panelens timers",
+      "description": "Avbryter alla timers på hallpanelen, eller med ett timer-id bara den (Hemmets påminnelsesida).",
+      "fields": {
+        "timer_id": {
+          "name": "Timer-id",
+          "description": "En av panelens timers, som panelen fick den från Home Assistant."
+        }
+      }
+    },
+    "timer_add": {
+      "name": "Lägg till tid på en paneltimer",
+      "description": "+1 min på Hemmets påminnelsesida: mer tid på en av panelens timers.",
+      "fields": {
+        "timer_id": {
+          "name": "Timer-id",
+          "description": "En av panelens timers, som panelen fick den från Home Assistant."
+        },
+        "seconds": {
+          "name": "Sekunder",
+          "description": "Hur mycket tid som läggs till."
+        }
+      }
+    },
+    "reminder_cancel": {
+      "name": "Ta bort en påminnelse",
+      "description": "Ta bort på Hemmets påminnelsesida: Jarvis stryker påminnelsen.",
+      "fields": {
+        "id": {
+          "name": "Påminnelse",
+          "description": "Påminnelsens nummer hos Jarvis."
+        }
+      }
+    }
+  }
+}

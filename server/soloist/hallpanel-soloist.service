@@ -1,0 +1,14 @@
+[Unit]
+Description=Spotify Soloist: the Spotify Connect speaker "Jarvis" on the JBL
+After=pipewire.service wireplumber.service network-online.target
+Wants=pipewire.service wireplumber.service
+
+[Service]
+ExecStart=/bin/sh %h/hallpanel-live/server/soloist/run.sh
+Restart=on-failure
+RestartSec=10
+# An expired build exits with 10: fetch the current one before the next start.
+ExecStopPost=/bin/sh -c '[ "$EXIT_STATUS" != 10 ] || /bin/sh %h/hallpanel-live/server/soloist/update.sh'
+
+[Install]
+WantedBy=default.target

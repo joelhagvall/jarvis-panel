@@ -1,0 +1,111 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jarvis server",
+        "description": "The hallway panel's server on this machine (server/hallpanel_server.py).",
+        "data": {
+          "url": "Address",
+          "token": "Token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach the Jarvis server at that address.",
+      "invalid_auth": "The Jarvis server refused the token."
+    },
+    "abort": {
+      "already_configured": "This Jarvis server is already set up."
+    }
+  },
+  "services": {
+    "warm": {
+      "name": "Warm up",
+      "description": "Opens the agent's connections ahead of a question. The panel calls it on the wake word."
+    },
+    "clear": {
+      "name": "Clear the conversation",
+      "description": "Rensa on the panel: Jarvis forgets the conversation so far. The history stays on Jarvis."
+    },
+    "wakeup_preview": {
+      "name": "Preview wakeup",
+      "description": "Control the Jarvis wakeup on the hallway panel."
+    },
+    "wakeup_snooze": {
+      "name": "Snooze for five minutes",
+      "description": "Control the Jarvis wakeup on the hallway panel."
+    },
+    "wakeup_stop": {
+      "name": "Stop wakeup",
+      "description": "Control the Jarvis wakeup on the hallway panel."
+    },
+    "media_control": {
+      "name": "Control music",
+      "description": "Pause, resume or stop hallway music without stopping voice announcements.",
+      "fields": {
+        "action": {
+          "name": "Action",
+          "description": "Toggle pause/play, stop, next or previous."
+        }
+      }
+    },
+    "speaker_volume": {
+      "name": "Bluetooth speaker volume",
+      "description": "The volume of the Bluetooth speaker on Jarvis, also while it is turned down for Jarvis.",
+      "fields": {
+        "level": {
+          "name": "Level",
+          "description": "Set it to this percentage."
+        },
+        "step": {
+          "name": "Step",
+          "description": "Or move it by this many percentage points."
+        }
+      }
+    },
+    "timer_start": {
+      "name": "Start a panel timer",
+      "description": "Hemmet's quick timer: Home Assistant's own timer on the hallway panel, as if asked by voice.",
+      "fields": {
+        "minutes": {
+          "name": "Minutes",
+          "description": "How long the timer runs."
+        }
+      }
+    },
+    "timer_cancel": {
+      "name": "Cancel the panel's timers",
+      "description": "Cancels every timer running on the hallway panel, or with a timer id only that one (Hemmet's reminder page).",
+      "fields": {
+        "timer_id": {
+          "name": "Timer id",
+          "description": "One of the panel's timers, as the panel got it from Home Assistant."
+        }
+      }
+    },
+    "timer_add": {
+      "name": "Add time to a panel timer",
+      "description": "+1 min on Hemmet's reminder page: more time on one of the panel's timers.",
+      "fields": {
+        "timer_id": {
+          "name": "Timer id",
+          "description": "One of the panel's timers, as the panel got it from Home Assistant."
+        },
+        "seconds": {
+          "name": "Seconds",
+          "description": "How much time to add."
+        }
+      }
+    },
+    "reminder_cancel": {
+      "name": "Remove a reminder",
+      "description": "Ta bort on Hemmet's reminder page: Jarvis cancels this pending reminder.",
+      "fields": {
+        "id": {
+          "name": "Reminder",
+          "description": "The reminder's number in Jarvis."
+        }
+      }
+    }
+  }
+}

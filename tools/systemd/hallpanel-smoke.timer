@@ -1,0 +1,10 @@
+[Unit]
+Description=Opt-in daily idle-only Hallpanel physical smoke
+
+[Timer]
+OnCalendar=*-*-* 12:00:00
+Persistent=false
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,25 @@
+date	commit	firmware_bytes	note	setup_start	setup_done	wifi_connected	first_image	api_connected	wake_word	boot_good	bg_shown	last_image_start	images	image_kb	crashes	errors	log
+2026-10-23T19:04	f19997e+dirty		boot cover + fast_connect, INFO, before full duplex	1.49	4.72	8.75	8.91			61.39	12.68	39.71	65	3219	0	-	logs/2026-10-23_1904_boot-serial-info.log
+2026-10-23T19:39	f19997e+dirty		full duplex audio, DEBUG log, 45 s capture	1.48	4.71	8.73	8.95	9.84	10.23		12.61	41.71	65	3219	0	-	logs/2026-10-23_1939_boot-serial-debug-full-duplex.log
+2026-10-23T20:14	f19997e+dirty	2120224	final firmware of 2026-10-23, INFO log, idle	1.51	4.74	8.74	8.95	12.88		61.41	12.72	41.86	65	3219	0	-	logs/2026-10-23_2014_boot.log
+2026-10-23T20:16	f19997e+dirty	2120224	final firmware of 2026-10-23, INFO log, idle (run 2)	1.54	4.71	8.73	8.89	9.84		61.43	12.49	41.21	65	3219	0	-	logs/2026-10-23_2016_boot.log
+2026-10-23T20:17	f19997e+dirty	2120224	final firmware of 2026-10-23, INFO log, idle (run 3)	1.51	4.72	8.74	8.9	36.22		61.4	12.68	39.62	65	3219	0	-	logs/2026-10-23_2017_boot.log
+2026-10-23T21:14	dd12c97+dirty	2144944	XIP from PSRAM (flicker fix), OTA update screen, health sensors	1.61	4.81	8.9	9.18	10.89		61.53	12.58	38.36	65	3219	0	-	logs/2026-10-23_2114_boot.log
+2026-10-23T22:45	29bb51a+dirty	2342928	performance: 10ms touch, immediate pages, 143-frame streaming atlas	1.62	4.83	8.87	9.13	9.73		61.56	12.26	18.88	4	6103	0	-	logs/2026-10-23_2245_boot.log
+2026-10-23T22:54	29bb51a+dirty	3572144	performance final: 10ms touch, immediate pages, 143-frame delta atlas, static orb background	1.86	5.12	9.12	9.38	26.33		61.82	12.97	16.67	3	2724	0	-	logs/2026-10-23_2254_boot.log
+2026-10-23T23:02	29bb51a+dirty	3578528	performance RGB565: bounded delta-RLE, 143 frames, 10ms touch, immediate pages	1.86	5.12	9.19	9.4	9.45		61.8	12.55	12.55	2	906	0	-	logs/2026-10-23_2302_boot.log
+2026-10-23T23:15	29bb51a+dirty	3578608	performance RGB565 plus persistent manual volume; no 70 percent boot reset	1.88	5.09	9.13	9.39	10.42		61.82	12.61	12.61	2	906	0	-	logs/2026-10-23_2315_boot.log
+2026-10-23T23:24	29bb51a+dirty	3579008	Skärmljus follows drag immediately; commit on release	1.89	5.07	9.11	9.37	33.85		61.81	12.97	12.97	2	906	0	-	logs/2026-10-23_2324_boot.log
+2026-10-23T23:52	29bb51a+dirty	3575856	phase2 experimental direct double buffers + worker atlas load	1.86	5.14	9.54	9.82	11.78		61.78	13.39	13.39	2	906	0	-	logs/2026-10-23_2352_boot.log
+2026-10-24T06:25	29bb51a+dirty	3578656	async double framebuffer; small auxiliary buffer; flicker correction	1.84	5.14	9.09	9.35	47.69		61.82	12.77	12.77	2	745	0	-	logs/2026-10-24_0625_boot.log
+2026-10-24T06:31	29bb51a+dirty	3578656	async double framebuffer; half-screen auxiliary buffer in PSRAM; final flicker correction	1.87	5.12	9.11	9.37	10.27		61.83	12.46	12.46	2	745	0	esp32.crash:42	logs/2026-10-24_0631_boot.log
+2026-10-24T06:40	29bb51a+dirty	2350384	transparent RGB565A8 orb over current art; async double buffers; PSRAM auxiliary buffer	1.67	4.92	8.92	9.14	10.09		61.56	12.22	12.22	2	745	0	-	logs/2026-10-24_0640_boot.log
+2026-10-24T06:49	29bb51a+dirty	2350848	current painting with cached light glass; transparent orb; asynchronous double framebuffer	1.65	4.91	8.91	9.19	9.81		61.53	12.63	15.93	3	865	0	-	logs/2026-10-24_0649_boot.log
+2026-10-24T06:55	29bb51a+dirty	2350976	final: readable white listening text; cached glass pane; current picture; transparent orb; double buffer	1.6	4.87	8.86	9.13	11.92		61.58	12.56	15.61	3	863	0	i2s_audio.speaker:1	logs/2026-10-24_0655_boot.log
+2026-10-24T07:01	29bb51a+dirty	2351232	final frameless glass; readable text; delayed ready sound after assets; async double buffers	1.61	4.89	8.87	9.13	15.84		61.58	12.56	16.05	3	865	0	-	logs/2026-10-24_0701_boot.log
+2026-10-24T07:23	29bb51a+dirty	2350704	Intermediate HPA3: native RAM decoder disabled; orb missing; superseded	1.64	4.89	8.87	9.08	9.19		61.56	12.06	15.55	3	865	0	lvgl:296	logs/2026-10-24_0723_boot.log
+2026-10-24T07:27	29bb51a+dirty	2354032	HPA3 native LZ4/RAM decoder enabled; 143 exact transparent frames; async double buffer	1.67	4.9	8.87	9.14	9.2		61.56	12.08	15.55	3	865	0	-	logs/2026-10-24_0727_boot.log
+2026-10-24T07:34	29bb51a+dirty	2658896	HPA3 lossless native LZ4 plus ESP-IDF O2 performance profile; async double buffers unchanged	1.66	4.92	8.93	9.2	14.05		61.6	12.37	15.44	3	865	0	-	logs/2026-10-24_0734_boot.log
+2026-10-24T07:50	29bb51a+dirty	2711776	Authenticated physical framebuffer screenshots + real LVGL remote touch; on-demand JPEG hardware encoder	1.65	4.96	8.91	9.17	9.49		61.6	12.08	15.3	3	865	0	-	logs/2026-10-24_0750_boot.log
+2026-10-24T08:26	29bb51a+dirty	2711776	Opaque settings sheet; surrounding scrim unchanged	1.67	4.94	8.95	9.21	34.83		61.64	12.42	15.67	3	865	0	-	logs/2026-10-24_0826_boot.log
+2026-10-25T21:21	967a92a+dirty	2817504	hosted SDIO reset delay 1500 -> 600, lwip max sockets 16 (via 21:03-21:2x)	1.69	3.99	7.94	8.15	8.9		61.65	10.45	12.53	3	2058	0	-	logs/2026-10-25_2121_boot.log

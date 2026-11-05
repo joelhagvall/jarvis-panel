@@ -1,0 +1,12 @@
+# Tavla's Earth view: NASA EPIC's newest picture of the Earth and today's closest asteroids (server/earth.py).
+# Run by hallpanel-earth.timer, and once by tools/deploy_jarvis.sh. Log: journalctl --user-unit hallpanel-earth
+[Unit]
+Description=Hallway panel: NASA's Earth picture and today's asteroids for Tavla
+After=network-online.target
+
+[Service]
+Type=oneshot
+NoNewPrivileges=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+ExecStart=%h/hallpanel-live/venv/bin/python3 %h/hallpanel-live/server/earth.py

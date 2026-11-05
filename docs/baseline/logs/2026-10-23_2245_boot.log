@@ -1,0 +1,26 @@
+# Public technical extract. Voice, network configuration and unclassified lines removed.
+   1.62 [I][app:060]: Running through setup()
+   1.94 [I][esp-idf:000]: E (395) H_API: ESP-Hosted link not yet up
+   4.83 [W][component:290]: api set Warning flag: waiting for client connection
+   4.83 [I][bench:045]: Measuring LVGL rendering
+   4.83 [I][app:117]: setup() finished successfully!
+   4.83 [W][component:290]: sound_level.sensor set Warning flag: Microphone isn't running, can't compute statistics
+   4.88 [W][component:290]: wifi set Warning flag: associating to network
+   4.93 [W][component:419]: lvgl took a long time for an operation (82 ms), max is 50 ms
+   4.93 [I][app:151]: ESPHome version 2026.9.1 compiled on 2026-10-23 22:40:17 +0200
+   4.93 [I][app:158]: ESP32 Chip: ESP32-P4 rev3.2, 2 core(s)
+   4.99 [W][component:313]: sound_level.sensor cleared Warning flag
+   9.08 [W][component:419]: wifi took a long time for an operation (264 ms), max is 50 ms
+   9.13 [W][component:313]: wifi cleared Warning flag
+   9.73 [W][component:313]: api cleared Warning flag
+  10.75 [W][component:419]: online_image.image took a long time for an operation (92 ms), max is 50 ms
+  12.26 [I][main:1801]: Ready sound skipped: night
+  12.58 [W][component:419]: online_image.image took a long time for an operation (90 ms), max is 50 ms
+  16.12 [W][component:419]: online_image.image took a long time for an operation (112 ms), max is 50 ms
+  16.38 [W][component:419]: online_image.image took a long time for an operation (138 ms), max is 120 ms
+  16.87 [W][component:419]: online_image.image took a long time for an operation (178 ms), max is 140 ms
+  17.20 [W][component:419]: online_image.image took a long time for an operation (183 ms), max is 180 ms
+  18.83 [W][component:419]: online_image.image took a long time for an operation (193 ms), max is 190 ms
+  19.10 [W][component:419]: online_image.image took a long time for an operation (243 ms), max is 50 ms
+  59.03 [I][orb_atlas:044]: Installed 143 frames without copying pixels
+  61.56 [I][safe_mode:154]: Boot seems successful; resetting boot loop counter
